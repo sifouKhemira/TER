@@ -1,0 +1,1852 @@
+{
+  "1": {
+    "id": "1",
+    "question": "Quelles sont les plages horaires autorisées pour les livraisons de matériel ?",
+    "reference_answer": "Les livraisons sont autorisées de 8h00 à 16h45 du lundi au vendredi sauf jours fériés, et le personnel de DEN BRAVEN n'est pas autorisé à les réceptionner.",
+    "expected_document": "19082-COMP-CCTP-001.pdf",
+    "expected_pages": "14",
+    "answerable": "oui",
+    "category": "obligation",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:13:54.776477+00:00",
+    "response": " Les plages horaires autorisées pour les livraisons de matériel sont de 8h00 à 16h45, du lundi au vendredi sauf jours fériés [SOURCE 2 — DOCUMENT 19082-COMP-CCTP-001.pdf — PAGE 14 — parent_27].",
+    "retrieved_contexts": [
+      " planification de préparation (coordination de sécurité) et de réalisation ;\n traiter les besoins de compléments de planification qui peuvent apparaître en cours de\nMatériels\n4.6.1 Livraisons et transport\nObligations du Mandataire :\nexemplaire de la commande de matériel/Liste de matériel (une des pièces du CDAT ou adressé\nLes quantités, les\nchantier), et le jour de rendez-vous figurent sur la commande de matériel ou dans tout autre\ndocument mis à la disposition par le Mandataire.\nSauf cas exceptionnel, les moyens de manutention nécessaires au déchargement ou chargement\nLe Mandataire est responsable des démarches administratives relatives à la circulation routière\npour les livraisons de matériel. Si elles nécessitent un dispositif spécifique, ces démarches et/ou leur\nans le cadre de la réalisation du\nchantier.\n:\nprend sous sa responsabilité le matériel fourni par le Mandataire ; ce transfert\nde responsabilité prend effet après déchargement et signature commune de la lettre de voiture.\ninforme le Mandataire de ses disponibilités.\n:\n le nom du réceptionnaire (dépositaire) et son numéro de téléphone ;\n le(s) lieu(x) de livraison de son choix (ses locaux, ou lieu de stockage proche du chantier - le\n-\ncirculation- horaires-, etc.).\n:\n être présent à la livraison du matériel ;\n prendre sous sa respo\nmatériel.\nRemarque\nvaine .\nEn cas de livraison et stockage de matériel (également pour les matériaux et baraquement) sur le\nchantier ou à proximité, Elle devra faire son affaire :",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 14/40\no Longueur de la flèche,\no Représentation du fléchage de la grue,\no Poids de la charge maxi autorisée (à 75%),\no Poids de la charge à lever,\no Conditions opératoires limites suivant la situation météorologique.\n- Le schéma de l’itinéraire des convois de charges et des grues à l’intérieur de l’usine,\n- La description détaillée de l’opération de levage comprenant :\no L’emplacement précis des grues,\no Le mode d’élingage,\no La séquence détaillée des opérations,\nEn cas de levage à l’aide de plus d’un engin, l’Entreprise spécifiera les variations de charges\nattendues pendant les opérations.\nSur ce plan doit figurer l’environnement total pour définir les risques encourus (nappes de\ntuyauterie, équipements figurés, ouvrage de génie civil). L’analyse des équipements en\nopération et les produits en circulation dans les lignes et capacités de la zone de levage\npar DEN BRAVEN.\n5.1.8 Livraison\nLes horaires de livraisons pour le matériel et les matériaux seront :\nDe 8h00 à 16h45 – Du Lundi au Vendredi sauf jours fériés.\nLes livraisons doivent être réceptionné par le représentant de l’Entreprise.\nAucune livraison ne sera réceptionnée par le personnel de DEN BRAVEN FRANCE\n5.2 Sous-traitance\nL’Entreprise précisera dans son offre si elle envisage d’avoir recours à la sous-traitance. Si tel\nest le cas, elle précisera le nom de la société sous-traitante ainsi que la/les prestation(s) sous-",
+      "Les 3 locaux de stockage de produits inflammables sont des zones à atmosphères\nexplosives ATEX. L’Entreprise préviendra DEN BRAVEN des dates d’intervention dans\nles locaux (à raison d’un à la fois) de manière à ce que les équipes de maintenance de\nDEN BRAVEN puissent aménager les horaires de production consigner la zone et la\ndéclasser temporairement. Les procédures d’exécution tiendront compte du risque\nd’atmosphère explosive, notamment pour les engins de levage.\nL’Entreprise équipera son personnel de détecteurs 4 gaz.\n6.4 Limites de prestations avec les autres lots\n6.4.1 A la charge du présent lot COMPARTIMENTAGE\n- Les travaux d’adaptation des parois de séparation entre le stockage matière première et\nproduits finis,\n- Les travaux d’adaptations des locaux de stockage de liquides inflammables suivants :\no Local de stockage des IBC de liquides inflammables,\no Local Solvants\no Local Etuves,\nCes travaux comprennent :\n- Amélioration de la résistance au feu de la structure métallique (poteaux et poutres\ntransversales, contreventements, poutres latérales),\n- Amélioration de la résistance au feu des parois en bardage (local Solvants)\n- Remplacement des éléments de couverture par une couverture EI120 sur 1m de part et\nd’autre de la paroi + mise en place d’une bande de protection de réaction au feu A1 ou\nA2 sur 5m de part et d’autre,",
+      "matériel.\nRemarque\nvaine .\nEn cas de livraison et stockage de matériel (également pour les matériaux et baraquement) sur le\nchantier ou à proximité, Elle devra faire son affaire :\n ;\n de la sécurisation du lieu et de modalités de stockage conformes aux prescriptions\n« constructeurs »\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 12/123"
+    ],
+    "sources": [
+      {
+        "document": "cctp2.pdf",
+        "page": 12,
+        "parent_id": "parent_87"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 14,
+        "parent_id": "parent_27"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 18,
+        "parent_id": "parent_36"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 12,
+        "parent_id": "parent_88"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 17.486
+  },
+  "2": {
+    "id": "2",
+    "question": "Quels sont les EPI obligatoires mentionnés pour le chantier ?",
+    "reference_answer": "Le matériel de sécurité comprend casques, chaussures, lunettes, gants, vêtements couvrants et harnais.",
+    "expected_document": "19082-COMP-CCTP-001.pdf",
+    "expected_pages": "4",
+    "answerable": "oui",
+    "category": "obligation",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:14:12.265435+00:00",
+    "response": " Les EPI obligatoires mentionnés pour le chantier sont :\n\n1. Casque de chantier dont la date de validité n'est pas dépassée.\n2. Vêtements de travail couvrants. Dans le cas de travaux dans une zone à risque d'exposition de produit chimique, les vêtements seront classés antistatiques, retard feu et protégeant des produits chimiques.\n3. Gants (adaptés au risque de chaque tâche effectuée)\n4. Chaussures de sécurité montantes au minimum.\n5. Lunettes de sécurité ou sur-lunette pour les porteurs de verres correcteurs.\n\n[SOURCE 4 — DOCUMENT 19082-COMP-CCTP-001.pdf — PAGE 10 — parent_18]",
+    "retrieved_contexts": [
+      "obligations susvisées. Le Mandataire tient GÉRÉDIS\nEntreprise(s) Agréée(s) susmentionnée(s) et/ou de tiers au(x) marché (s).\nLa responsabilité du Mandant ne pourra être recherchée, sauf à démontrer que la défaillance et/ou\nle dommage résul\n13.3.3 Réception des Ouvrages Mandataire\n- , qui est\nprécisée dans le procès-verbal de réception.\nLa réception du chantier est formalisée après :\n ;\n la tenue sur ;\n\nObligations du Mandataire :\n organiser les opérations de réception des Ouvrages Mandataire, en présence du Mandant,\nagréée et le cas échéant du gestionnaire de voirie ou du propriétaire ou du\n;\n vérifier lors de cette revue la conformité apparente des travaux aux spécifications du\nContrat, du présent CCTP, ion de GÉRÉDIS, de la\n;\n vérifier par échantillonnage, lors de la revue ou en différé, la conformité aux spécifications\nnon directement vérifiable visuellement ;\n vérifier (hors revue) la complétude et la conformité du CFAT ; ;\n en cas de réserves, organiser sans délai la planification nécessaire à la levée de ces\nréserves ;\n ;\n signer le PV de réception.\nObligations du Mandant :\n vérifier lors de cette revue la conformité apparente des travaux aux spécifications du\nContrat, du présent CCTP, , de la\n;\n vérifier en différé, la conformité aux spécifications non directement vérifiable visuellement ;\n vérifier (hors revue) la complétude et la conformité du CFAT ;\n réaliser lors de la revue les essais GÉRÉDIS\ndes câbles, accessoires et écrans",
+      "- Le chantier (y compris aires de stockage) devra être constamment tenu en état de\npropreté (nettoyage quotidien du chantier et nettoyage hebdomadaire soigné). Il sera\nlaissé parfaitement net avant l'intervention du corps d'état suivant et après la fin des\ntravaux. Dans le cas où ce nettoyage ne serait pas satisfaisant, DEN BRAVEN se réserve\nle droit de faire réaliser ce nettoyage par l’entreprise elle-même sans qu’elle puisse nous\nimputer des pénalités ou des retards.\nUn interlocuteur unique sera désigné par l’Entreprise pour la coordination avec DEN\nBRAVEN pendant toute la durée du chantier.\nL’Entreprise remettra avec son offre un organigramme (chef de chantier, chef d’équipe,\nmonteurs, etc.) en précisant les moyens mis en œuvre pour mener à bien le projet.\nUn chef de chantier sera présent en permanence sur le site et il sera l’interlocuteur privilégié\nde DEN BRAVEN. Il assistera aux réunions hebdomadaires et disposera des pouvoirs\nnécessaires afin de ne pas retarder le déroulement du chantier.\n5.1.1 Base vie\nLes baraquements de chantier seront localisés sur une zone définie par le Maître d’Ouvrage.\nLe personnel féminin aura à sa disposition des vestiaires et sanitaire dans les locaux du Maître\nd’Ouvrage.\n5.1.2 Electricité\nDEN BRAVEN mettra à la disposition de l’Entreprise un coffret de chantier dans la zone de\ntravail à côté de la base vie. A l’Entreprise de prévoir les rallonges si nécessaire.",
+      "4.1 Généralité ................................................................................................ 9\n4.2 Plan de prévention et Analyse des Risques ............................................ 9\n4.3 Sureté ...................................................................................................... 9\n4.4 Certification demandée ............................................................................ 9\n4.5 Accueil sécurité ......................................................................................10\n4.6 Travaux soumis à autorisation ................................................................10\n4.7 EPI obligatoires ......................................................................................10\n4.8 EPC ........................................................................................................10\n4.9 Matériel/engins de l’entreprise ................................................................10\n4.10 Gestion des déchets ...............................................................................10\n4.11 Animation HSE .......................................................................................11\n4.12 Non-respect des règles du site ...............................................................11\n5 DESCRIPTIONS PARTICULIERES DE REALISATION .............................. 12\n5.1 Organisation générale du chantier ..........................................................12",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 10/40\n4.5 Accueil sécurité\nTous les personnels de l’Entreprise adjudicataire (et ses sous-traitants) passeront\nobligatoirement l’accueil sécurité avant de débuter leurs premiers travaux sur le site.\nDans la mesure du possible, les intervenants viendront avant la date de début des travaux.\nDes sessions de formation d’une heure seront réalisées ponctuellement.\nLa demande de l’accueil sécurité doit être effectuée 48 heures pour permettre de les organiser\nsans pénaliser la réalisation des travaux.\n4.6 Travaux soumis à autorisation\nTous les travaux réalisés sur site seront couverts par une autorisation de travail avec\néventuellement des permis complémentaires (permis de feu...).\nL’entreprise désignera une personne formée et habilitée à rédiger et valider un permis.\n4.7 EPI obligatoires\nAu minimum, l’Entreprise équipera son personnel de :\n- Casque de chantier dont la date de validité n’est pas dépassée.\n- Vêtements de travail couvrants. Dans le cas de travaux dans une zone à risque\nd’exposition de produit chimique, les vêtements seront classés antistatiques, retard feu et\nprotégeant des produits chimiques.\n- Gants (adaptés au risque de chaque tâche effectuée)\n- Chaussures de sécurité montantes au minimum.\n- Lunettes de sécurité ou sur-lunette pour les porteurs de verres correcteurs.\n4.8 EPC\nL’entreprise fournira les équipements de protections collectives pour protéger son personnel\net toute autre personne."
+    ],
+    "sources": [
+      {
+        "document": "cctp2.pdf",
+        "page": 94,
+        "parent_id": "parent_228"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 12,
+        "parent_id": "parent_23"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 2,
+        "parent_id": "parent_2"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 10,
+        "parent_id": "parent_18"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 21.323
+  },
+  "3": {
+    "id": "3",
+    "question": "Quelle est la température critique associée au classement R120 pour les structures métalliques en débord ?",
+    "reference_answer": "La température critique est de 500 °C avec le produit PROMASPRAY P300.",
+    "expected_document": "19082-COMP-CCTP-001.pdf",
+    "expected_pages": "34",
+    "answerable": "oui",
+    "category": "valeur_technique",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:14:33.592678+00:00",
+    "response": " La température critique associée au classement R120 pour les structures métalliques en débord n'est pas explicitement mentionnée dans les extraits fournis. Cependant, il est indiqué que la température critique pour une durée d'exposition au feu de 120 minutes est de 500°C pour une paroi coupe-feu [SOURCE 2, page 26]. Il est possible que ce soit également le cas pour les structures métalliques en débord, mais cela n'est pas clairement établi. [SOURCE 1, page 28 et SOURCE 4, page 29] mentionnent que les structures métalliques doivent être protégées pour obtenir un classement R120 avec une température critique de 500°C, mais sans préciser si cela s'applique également aux structures en débord.",
+    "retrieved_contexts": [
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 28/40\n9 DESCRIPTION DES TRAVAUX\n9.1 Séparation entre les entrepôts Matières Premières et Produits finis\n9.1.1 Etat actuel et travaux à réaliser\nL’objectif des travaux est de renforcer le caractère REI120 des 2 parois de séparation entre\nles entrepôts Matières Premières et Produits finis. A ce jour, le mur en parpaing a un caractère\nintrinsèque EI120. Son intégration dans une structure métallique de résistance au feu nulle\nannule le caractère REI 120 de la paroi.\nPhoto 1 : Paroi parallèle au sens porteur Photo 2 : Paroi perpendiculaire au sens porteur\nLes chapitres suivants présentent une première approche pour la réalisation des travaux.\nCette approche devra être validée par l’Entreprise à la remise de son offre. Il lui appartient de\nmettre en œuvre les matériaux et les modes opératoires permettant d’obtenir des ouvrages de\nrésistance au feu REI120.\n9.1.2 Encoffrement des structures métalliques inscrites dans la paroi\nLes éléments de structures (poteaux et poutres) inscrits dans les parois seront encoffrés. En\npremière approche, les structures métalliques pourraient être protégées par une épaisseur de\n2 x 25 mm de plaque silico-calcaire autoclavée incombustible et imputrescible de type\nPROMATECT-H ou équivalent.\nCette approche sera validée par l’Entreprise à la remise de son offre. Il lui appartient de mettre\nen œuvre les matériaux et les modes opératoires permettant d’obtenir des poteaux R120.",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 26/40\n8.6 Prise en compte du facteur de massivité des structures métalliques\nL’Entreprise prévoira l’encoffrement ou le recouvrement par enduit de tous les éléments de\nstructure métallique de la paroi. L’épaisseur de l’encoffrement doit être déterminé par le\nsoumissionnaire.\nL’épaisseur de protection rapportée sur les structures en profil métallique au voisinage des\néléments de séparation sera déterminée en considérant :\n- Une température critique de 500°C pour une durée d’exposition au feu identique au critère\ncoupe-feu de la paroi soit 120 minutes,\n- Le facteur de massiveté donné dans les tableaux 1 et 2 en fonction de la configuration de\nla paroi coupe-feu : paroi CF perpendiculaire au sens porteur de la structure, paroi CF\nparallèle au sens porteur de la structure. Le relevé des charpentes est à la charge de\nl’Entreprise\nTableau 1 : Facteur de massiveté d’un poteau métallique protégé au voisinage d’une paroi\nCF perpendiculaire au sens porteur de la structure",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 34/40\n9.2.2 Enduit de projection des structures non-inscrites dans la paroi\nLes éléments de structure métallique inscrits avec dépassement latéral ou traversant les murs\nseront protégées par un enduit projeté de type PROMASPRAY P300, en tout point\nconformément à un procès-verbal français en cours de validité, pour leur conférer un\nclassement R 120 avec une température critique de 500 °C.\nLes éléments qui seront enduits sont les suivants :\n- Poteaux à dépassement latéral ou collés à la paroi,\n- Contreventements collés à la paroi,\n- Poutres (traverses et pannes) transversales à la paroi sur 500 mm de part et d’autre,\n- Pannes parallèles à la parois situées à moins de 500 mm de la paroi,\n- Aisseliers.\nLa protection des éléments latéraux doit permettre de décaler de la paroi la rotule plastique\nqui va se former à chaud durant l’incendie.\nZones concernées :\n- Local de stockage de liquides inflammables en IBC\n- Local Solvants\n- Local Etuves\n9.2.3 Traitement des fissures des parois en parpaing\nL’entreprise traitera les fissures présentes sur les parois en parpaings. Elle prendra à sa\ncharge la mise en œuvre d’une plaque silico-calcaire de type PROMATECT-H ou équivalent\nd’épaisseur 20 mm et de largeur 1000 mm. Les plaques seront fixées par ancrages adaptés\nsur le mur en parpaing, de type chevilles à bascule ou équivalent.\nZone concernée :\n- Local de stockage de liquides inflammables en IBC",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 29/40\nParoi parpaing\nFigure 4 : Principe d’encoffrement des poutres inscrites dans la paroi\n9.1.3 Enduit de projection des structures non-inscrites dans la paroi\nLes éléments de structure métallique inscrits avec dépassement latéral ou traversant les murs\nseront protégées en tout point par un enduit projeté de type PROMASPRAY P300,\nconformément à un procès-verbal français en cours de validité, pour leur conférer un\nclassement R 120 avec une température critique de 500 °C.\nLes éléments qui seront enduits sont les suivants :\n- Poteaux à dépassement latéral,\n- Contreventements collés à la paroi,\n- Poutres (traverses et pannes) transversales à la paroi sur 500 mm de part et d’autre,\n- Pannes parallèles à la parois situées à moins de 500 mm de la paroi,\n- Aisseliers.\nLa protection des éléments latéraux doit permettre de décaler de la paroi la rotule plastique\nqui va se former à chaud durant l’incendie.\nLes épaisseurs de protection rapportée sur les éléments constitutifs des contreventements\ndoivent être déterminées en considérant une section exposée sur toutes les faces du profilé\nmétallique pour une durée d’exposition au feu de 2 heure et un échauffement limité à 500°C.\n9.1.4 Traitement des fissures des parois en parpaings\nUne fissure toute hauteur, de largeur 1 mm et traversante, correspondant à un mur en\npercussion a pu être observée sur l'un des murs en parpaings. L’Entreprise prendra à sa"
+    ],
+    "sources": [
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 28,
+        "parent_id": "parent_49"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 26,
+        "parent_id": "parent_47"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 34,
+        "parent_id": "parent_59"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 29,
+        "parent_id": "parent_51"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 23.98
+  },
+  "4": {
+    "id": "4",
+    "question": "À partir de combien d'intervenants la présence d'un préventeur sécurité devient-elle obligatoire ?",
+    "reference_answer": "À partir de 15 intervenants.",
+    "expected_document": "19082-COMP-CCTP-001.pdf",
+    "expected_pages": "11",
+    "answerable": "oui",
+    "category": "information_directe",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:14:57.575427+00:00",
+    "response": " À partir de 15 intervenants, la présence d'un préventeur sécurité devient obligatoire, selon le document 19082-COMP-CCTP-001.pdf, page 11 [parent_20].",
+    "retrieved_contexts": [
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 11/40\nCertains déchets pourront être évacués par les filières en place sur le site de Den Braven.\nL’autorisation sera donnée au cas par cas par l’HSE manager du site.\nLes déchets seront à évacuer au moins une fois par semaine (vendredi) pour éviter une\naccumulation sur site. La fréquence pourra être augmentée.\n4.11 Animation HSE\nAu-delà de 5 intervenants, l’entreprise mettra à disposition de son chantier un préventeur\nsécurité à mi-temps.\nAu-delà de 15 intervenants, un préventeur sécurité sera présent en permanence.\n4.12 Non-respect des règles du site\nTout personnel Den Braven a autorité pour faire stopper un chantier non conforme aux\nexigences de sécurité interne.\nLe chantier sera arrêté immédiatement et l’entreprise devra réaliser une information sécurité\nauprès de son personnel pour rappeler les règles et l’obligation de les respecter.\nLe responsable de l’entreprise sera convoqué par le directeur ou l’HSE manager Den Braven.\nIl présentera le plan d’action qu’il met en place pour éviter ces anomalies.\nDen Braven se réserve le droit de refuser l’accès au site aux personnels ne respectant pas les\nrègles de sécurité. L’entreprise, dans le cas où elle ne serait pas en mesure d’appliquer les\nconsignes de Den Braven, pourrait se voir interdire l’accès au site sans aucun\ndédommagement autre que le paiement des heures réalisées et du matériel fourni à Den\nBraven.",
+      "Réglementation en matière de coordination de sécurité\n:\n\nassurer la sécurité et la protection de la\nde distribution ;\n rechercher à éviter les situations de coactivité et les interférences inutiles entre acteurs.\nLe Mandataire est responsable de la prévention des risques liés aux travaux exécutés dans le cadre\ndu Contrat de Mandat. A ce titre, il lui appartient :\n\nIntervenantes pour assurer la sécurité et la protection de la santé sur le chantier de\nréalisation ;\n notamment de définir, le cas échéant, à quelle règlementation obéissent les travaux à\nréaliser :\no Réglementation générale applicable aux travaux réalisés dans un établissement\npar une entreprise extérieure ;\no Réglementation particulière BTP pour les opérations de bâtiment ou de génie civil ;\n\npérimètre des travaux est informée des dispositions retenues pour prévenir les risques.\nes de protection qui en découlent.\nprévention conformes à la réglementation pour assurer la Sécurité et la Protection de la Santé sur\nles chantiers. Elle fait connaître à son personnel les consignes particulières liées à leur utilisation.\n5.2.1 Réglementation générale\ntallations et matériels des différentes\nentreprises (Mandataire-entreprise utilisatrice et entreprises extérieures) présentes sur un même\nlieu de travail.\nPour les travaux relevant de la Réglementation générale applicable aux travaux réalisés dans un\nétablissement par une entreprise extérieure le Mandataire et chaque Entreprise Agréée assument",
+      "- Les réunions de coordination avec les lots Protection Incendie et SSI/Electricité,\n- Les frais et prestations liés à l'établissement d'aires de montage,\n- Le matériel de sécurité chantier : casques, chaussures, lunettes, gants, vêtements\ncouvrants, harnais,\n- Le dossier des ouvrages exécutés, ainsi que tous les plans tels que construit,\n- La notice d’utilisation de l’installation spécifique,\n- L'instruction et la formation du personnel d'exploitation du site aux matériels installés, avec\nnotamment la réalisation d'un support de formation écrit annexé aux dossiers des\nouvrages exécutés,\n- La réception en présence des représentants de la maitrise d’ouvrage et de la maitrise\nd’œuvre.\n6.2 Phasage du projet\nL’installation sera réalisée en une seule phase de travaux si possible. L’Entreprise tiendra\ncompte dans son offre de la réalisation des travaux avec une usine en exploitation.\nLes travaux seront coordonnés avec les lots Protection Incendie et Electricité/SSI. L’entreprise\nne pourra pas réclamer de compensation en cas de décalage des travaux. L’Entreprise\nprévoira l’organisation, le temps et les documents d’exécution nécessaires à la coordination\navec les lots suivants :\n- Protection incendie : Supportage des équipements de protection incendie à réaliser avant\nle flocage des structures métalliques des 3 locaux de stockage de liquides inflammables.\nMise en œuvre des équipements de protection incendie après le flocage des locaux.",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 38/40\n10 EXECUTION\nL’Entreprise doit :\n- Les fournitures et les prestations annexes complémentaire ne figurant ni aux plans ni aux\ndescriptifs, mais qui sont indispensable pour une exécution complète des ouvrages\nconformes aux normes françaises et DTU en vigueur,\n- Avant la remise de son offre, l’Entreprise devra vérifier sous sa propre responsabilité les\nopérations et ouvrages mentionnés au Descriptif et les complétera, s’il y a lieu, par tous\nles moyens en son pouvoir (renseignements pris auprès du MOA, du BET, étude des\nplans, visites des lieux, etc.) afin de prévoir dans ses prix l’ensemble des ouvrages\nnécessaires à un parfait achèvement des travaux de son lot.\nAucun supplément de prix ne pourra être accordé ultérieurement du fait que les\nrenseignements dont l’Entreprise s’était entourée, étaient inexacts ou incomplets.\n11 RECEPTION DE L’INSTALLATION\nL’entreprise est tenue de procéder elle-même (par l’intermédiaire de son conducteur de\ntravaux) à une réception préalable.\nEn cas de présence des interfaces avec autres lots (des pièces à sceller, les\nsupportages etc.) la réception se fera en présence des fournisseurs respectifs.\nL’Entreprise devra donc, avant la date fixée pour la réception, et\nsans forcément l’invitation procéder à la révision complète des ouvrages de son lot.\nAvant mise à disposition, un avis de chantier avec rédaction d’un procès-verbal sera\nréalisé par la société EFECTIS."
+    ],
+    "sources": [
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 11,
+        "parent_id": "parent_20"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 17,
+        "parent_id": "parent_96"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 17,
+        "parent_id": "parent_34"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 38,
+        "parent_id": "parent_66"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 16.588
+  },
+  "5": {
+    "id": "5",
+    "question": "À quelles caractéristiques européennes correspondent les anciennes classes françaises SF et PF ?",
+    "reference_answer": "SF correspond à R (Résistance mécanique) et PF correspond à E (Étanchéité aux flammes).",
+    "expected_document": "19082-COMP-CCTP-001.pdf",
+    "expected_pages": "24",
+    "answerable": "oui",
+    "category": "synthese",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:15:14.166782+00:00",
+    "response": " Les anciennes classes françaises SF et PF correspondent aux caractéristiques européennes suivantes :\n\n- SF : Stabilité au feu correspond à la classe européenne R (Capacité portante) [SOURCE 1, page 24]\n- PF : Pare-flamme correspond à la classe européenne PF (Pare-flamme) [SOURCE 1, page 24]\n\n[SOURCE 1 — DOCUMENT 19082-COMP-CCTP-001.pdf — PAGE 24]",
+    "retrieved_contexts": [
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 24/40\n8.3 Travaux préparatoires\nAvant le chantier, l’entreprise devra procéder à un constat conjointement entre DEN BRAVEN\net l’entrepreneur pour tous les existants à proximité des travaux Ce constat sera réalisé par\nl’Entreprise en 3 exemplaires avec pièces écrites et photos en couleur.\n8.4 Notion de résistance au feu\nLa résistance au feu, est le temps pendant lequel un élément de construction peut jouer le rôle\nqui lui est dévolu malgré l’action de l’incendie,\nL’arrêté du 22 mars 2004, mis en application du code, précise les critères retenus pour les\néléments de construction. La classification est établie en tenant compte du temps pendant\nlequel sont satisfaites les conditions imposées relatives à :\n- La résistance mécanique R,\n- L’étanchéité aux flammes E,\n- L’isolation thermique I.\nSchéma 1 : Illustration des critères R, E et I (source : CERIB)\nAuparavant, l’arrêté du 3 août 1999 définissait les exigences relatives à la résistance au feu\ndes produits, éléments de construction et d’ouvrages. L’arrêté du 22 mars 2004 remplace et\nabroge l’arrêté du 3 août 1999.\nLes anciennes classes françaises trouvent une correspondance avec les classes\neuropéennes :\nClassification de l’arrêté du 3 août 1991 Classification de l’arrêté du 22 mars 2004\nSF : Stabilité au feu R : Capacité portante\nE : Etanchéité thermique\nPF Pare-flamme\nCas pratique : RE si élément porteur\nI Isolation thermique",
+      "SF : Stabilité au feu R : Capacité portante\nE : Etanchéité thermique\nPF Pare-flamme\nCas pratique : RE si élément porteur\nI Isolation thermique\nCF : Coupe-feu Cas pratique : EI uniquement\nREI si porteur",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 38/40\n10 EXECUTION\nL’Entreprise doit :\n- Les fournitures et les prestations annexes complémentaire ne figurant ni aux plans ni aux\ndescriptifs, mais qui sont indispensable pour une exécution complète des ouvrages\nconformes aux normes françaises et DTU en vigueur,\n- Avant la remise de son offre, l’Entreprise devra vérifier sous sa propre responsabilité les\nopérations et ouvrages mentionnés au Descriptif et les complétera, s’il y a lieu, par tous\nles moyens en son pouvoir (renseignements pris auprès du MOA, du BET, étude des\nplans, visites des lieux, etc.) afin de prévoir dans ses prix l’ensemble des ouvrages\nnécessaires à un parfait achèvement des travaux de son lot.\nAucun supplément de prix ne pourra être accordé ultérieurement du fait que les\nrenseignements dont l’Entreprise s’était entourée, étaient inexacts ou incomplets.\n11 RECEPTION DE L’INSTALLATION\nL’entreprise est tenue de procéder elle-même (par l’intermédiaire de son conducteur de\ntravaux) à une réception préalable.\nEn cas de présence des interfaces avec autres lots (des pièces à sceller, les\nsupportages etc.) la réception se fera en présence des fournisseurs respectifs.\nL’Entreprise devra donc, avant la date fixée pour la réception, et\nsans forcément l’invitation procéder à la révision complète des ouvrages de son lot.\nAvant mise à disposition, un avis de chantier avec rédaction d’un procès-verbal sera\nréalisé par la société EFECTIS.",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 23/40\n8 SPECIFICATIONS TECHNIQUES GENERALES\nLes prestations réalisées par l’Entreprise devront être exécutées conformément aux textes\nréglementaires applicables en France, notamment les Eurocodes et les arrêtés du 22/03/2004\net du 14/02/2003.\nCes textes et référentiels seront ceux en vigueur à la date de signature du contrat.\nToutes dérogations (autres que celles d’ores et déjà listées dans le présent document) devront\nfaire l’objet d’une demande écrite par l’Entreprise. Elles devront impérativement être spécifiées\ndans l’offre.\nLa dérogation accordée par le représentant de DEN BRAVEN ou son assureur devra être\nécrite et fera partie intégrante du Dossier des Ouvrages Exécutés (DOE).\nEn cas de conflit ou de contradiction dans les différentes règles applicables, l'ordre de\npréséance est le suivant :\n- La législation,\n- Les normes françaises et européennes dans leur dernière version,\n- Le présent cahier des charges,\n- Les règles, guides et standards DEN BRAVEN / BOSTIK.\n8.1 Textes applicables\nToutes les dérogations aux standards ou réquisitions listés dans le présent document devront\nfaire l’objet d’une demande écrite de l’Entreprise adjudicataire. Elles devront impérativement\nêtre spécifiées dans l’offre. De plus, la dérogation devra être écrite et insérée dans le dossier\ndes ouvrages exécutés.\nLes documents et textes applicables dans le cadre de ce marché sont les suivants :"
+    ],
+    "sources": [
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 24,
+        "parent_id": "parent_44"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 24,
+        "parent_id": "parent_45"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 38,
+        "parent_id": "parent_66"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 23,
+        "parent_id": "parent_42"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 18.906
+  },
+  "6": {
+    "id": "6",
+    "question": "Quel est l'objet principal du CCTP Lot 1 ?",
+    "reference_answer": "Le projet concerne l'aménagement intérieur d'un Espace Numérique à Arue pour le compte de la CCISM.",
+    "expected_document": "cctp_lot_1.pdf",
+    "expected_pages": "3",
+    "answerable": "oui",
+    "category": "information_directe",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:15:33.077900+00:00",
+    "response": " L'objet principal du CCTP Lot 1 est l'aménagement intérieur d'un ESPACE NUMERIQUE, à Arue, pour le compte de la CCISM, et il concerne l'ossature métallique - plancher métallique, escalier et garde-corps métalliques [SOURCE 4 — DOCUMENT cctp_lot_1.pdf — PAGE 3 — parent_298].",
+    "retrieved_contexts": [
+      "ESPACE NUMERIQUE\nCCTP\nLot 1\nOssature métallique - Plancher métallique\nEscalier et garde-corps métalliques",
+      "CCISM – ESPACE NUMERIQUE- CCTP Lot 1\net de plans de principe tenant compte des contraintes définies au CCTP. \u0000Elles\nne devront engendrer aucune plus-value aux autres corps d'état. \u0000\n2 CONSISTANCE DES TRAVAUX\n2.1 PRESTATION DE L'ENTREPRISE\nL'entrepreneur du présent lot est tenu de prendre connaissance de l'intégralité\ndu C.C.T.P. (Cahier des Clauses Techniques Particulières). Il ne pourra en aucun\ncas se prévaloir d’une non connaissance des travaux directement confiés à son\nlot ou provenant d’obligations qui lui sont faites, au regard des autres lots.\nL’entrepreneur est par ailleurs réputé avoir procédé à une lecture approfondie\nde tous les documents constituant le dossier de consultation des entreprises,\ntout corps d’états confondus.\nIl est également tenu de signaler, le cas échéant à l’Architecte les erreurs,\ncontradictions ou omissions qu’il pourrait constater pendant la période de\npréparation de son offre.\nCes remarques ou observations devront être portées à la connaissance de\nl’Architecte, huit jours au plus tard, avant la date limite de remise des offres de\nprix. Ce, afin de lui permettre d’en porter, si nécessaire connaissance aux autres\ncandidats.\nPassé ce délai, l’entrepreneur sera censé avoir tenu compte de ses propres\nremarques ou observations. Il ne pourra aucunement par la suite, s’en prévaloir\npour prétendre, réviser son offre à la hausse.\n2.1 PLANS D'EXECUTION - DOSSIER DES OUVRAGES EXECUTES",
+      "CCISM – ESPACE NUMERIQUE- CCTP Lot 1\n• fourniture de l'ensemble des profils, tubes, fers, pièces spéciales,\nentretoises, platines, goussets, renforts, boulons, fixations et accessoires\ndivers nécessaires à l'exécution des ouvrages,\n• mise en œuvre de l'ensemble des ouvrages, compris assemblages de\ntoute nature et toutes sujétions de transport, manutention, levage,\nprotections, étaiements, échafaudages, etc., nécessaires au parfait\naccomplissement des travaux,\n• sujétions diverses pour liaisons avec les ouvrages béton de l'existant.\n• y compris toutes sujétions de finitions.\n3.2 STRUCTURE METALLIQUE DE L’ENVELOPPE\nAfin de supporter le plancher de la mezzanine, l'entreprise devra la réalisation de\nla structure métallique porteuse, en acier galvanisé à chaud.\nFabrication, pose et scellements des ouvrages de charpente métallique sur le\ndallage et les murs existants, comprenant :\n• Approvisionnement des profilés (portiques, poteaux, poutres, etc.),\nsuivant études et plans de structure :\no poteaux en profilés type HEA, HEB, IPE ou équivalent recevant en\npied des platines en tôle forte, \u0000\no poutres porteuses en profilé type IPN ou IPE de section appropriée\nà la surcharge totale à prendre en compte (250 kg/m2), assemblées\nsur les poteaux par des platines et goussets de report de charges,\no poutres de contreventement éventuelles en profilés dito\nassemblées sur les poutres et poteaux décrits ci-avant,\no y compris toutes ossatures complémentaires, entraxe suivant plans",
+      "CCISM – ESPACE NUMERIQUE- CCTP Lot 1\n1 DISPOSITIONS GENERALES\n1.1 OBJET DU PRÉSENT LOT\nLe présent Cahier des Clauses Techniques Particulières a pour objet de définir\nles prestations définissant le\nLot 1\nOssature métallique - Plancher métallique,\nEscalier et garde-corps métalliques\nrelatif au projet d'aménagement intérieur d’un ESPACE NUMERIQUE, à Arue,\npour le compte de la CCISM.\n1.2 NORMES ET REGLEMENTS\nL’entreprise du présent lot devra exécuter ses ouvrages selon les règles de l’art\net les textes en vigueur au jour de la soumission, et notamment les :\n• Cahiers et règles de calcul des DTU édités par le CSTB.\n• Normes NF.\n• Normes AFNOR pour la conformité des matériaux selon les arrêtés et\ndécrets.\n• Les avis techniques du C.S.T.B.\n1.3 SÉCURITÉ DE CHANTIER\nLes protections nécessaires destinées à assurer la sécurité et l'hygiène du\npersonnel, suivant la législation en vigueur, sont à la charge du présent lot et\ncomprises dans son prix.\n1.4 VARIANTES\nDes solutions variantes pourront être proposées par l'entrepreneur, cependant la\ngéométrie intérieure des ouvrages sera inchangée. Elles devront être\naccompagnées de notes descriptives, les modifications des descentes de charge\n3"
+    ],
+    "sources": [
+      {
+        "document": "cctp_lot_1.pdf",
+        "page": 1,
+        "parent_id": "parent_296"
+      },
+      {
+        "document": "cctp_lot_1.pdf",
+        "page": 4,
+        "parent_id": "parent_299"
+      },
+      {
+        "document": "cctp_lot_1.pdf",
+        "page": 8,
+        "parent_id": "parent_307"
+      },
+      {
+        "document": "cctp_lot_1.pdf",
+        "page": 3,
+        "parent_id": "parent_298"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 18.707
+  },
+  "7": {
+    "id": "7",
+    "question": "Comment les éléments en acier de la charpente doivent-ils être protégés contre la corrosion ?",
+    "reference_answer": "Tous les éléments en acier doivent être protégés par galvanisation à chaud.",
+    "expected_document": "cctp_lot_1.pdf",
+    "expected_pages": "6",
+    "answerable": "oui",
+    "category": "obligation",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:15:51.789753+00:00",
+    "response": " Les éléments en acier de la charpente doivent être protégés contre la corrosion par galvanisation à chaud [SOURCE 1.pdf, page 6].",
+    "retrieved_contexts": [
+      "début de ses travaux, lui permettant ensuite d’en demander rectification,\nréparations si ces plans lui ont bien été remis en temps utile.\n2.2 QUALITÉ DES OUVRAGES\nLes fers et aciers employés profilés du commerce, tubes ou autres, pour les\nouvrages d'ossature métallique, seront de 1re qualité, bien dressés, ne\nprésentant aucune alvéole d'oxydation ni défaut apparent.\nLes assemblages boulonnés ou rivés seront parfaitement exécutés pour résister\nsans déformation permanente ni amorce de rupture aux essais mécaniques.\nTous les éléments en acier (profilés ; fixations…) seront protégés contre la\ncorrosion par galvanisation à chaud.\n6",
+      "CCISM – ESPACE NUMERIQUE- CCTP Lot 1\n• fourniture de l'ensemble des profils, tubes, fers, pièces spéciales,\nentretoises, platines, goussets, renforts, boulons, fixations et accessoires\ndivers nécessaires à l'exécution des ouvrages,\n• mise en œuvre de l'ensemble des ouvrages, compris assemblages de\ntoute nature et toutes sujétions de transport, manutention, levage,\nprotections, étaiements, échafaudages, etc., nécessaires au parfait\naccomplissement des travaux,\n• sujétions diverses pour liaisons avec les ouvrages béton de l'existant.\n• y compris toutes sujétions de finitions.\n3.2 STRUCTURE METALLIQUE DE L’ENVELOPPE\nAfin de supporter le plancher de la mezzanine, l'entreprise devra la réalisation de\nla structure métallique porteuse, en acier galvanisé à chaud.\nFabrication, pose et scellements des ouvrages de charpente métallique sur le\ndallage et les murs existants, comprenant :\n• Approvisionnement des profilés (portiques, poteaux, poutres, etc.),\nsuivant études et plans de structure :\no poteaux en profilés type HEA, HEB, IPE ou équivalent recevant en\npied des platines en tôle forte, \u0000\no poutres porteuses en profilé type IPN ou IPE de section appropriée\nà la surcharge totale à prendre en compte (250 kg/m2), assemblées\nsur les poteaux par des platines et goussets de report de charges,\no poutres de contreventement éventuelles en profilés dito\nassemblées sur les poutres et poteaux décrits ci-avant,\no y compris toutes ossatures complémentaires, entraxe suivant plans",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 21/40\n7 OBJECTIFS DE TRAVAUX\n7.1 Etat de lieux et objectifs\nLocal Sujet Nature Classement Requis\nLocal IBC Structure Charpente métallique R0 R120\nMurs Parpaings EI120* EI120\nToiture Toiture et éléments supports A1 A1\nRevêtement de toiture Droof (t3) Broof (t3)\nLocal Structure Charpente métallique R0 R120\nSolvants\nMurs Parpaings EI120* EI120\nBardage EI0 EI120\nToiture Revêtement de toiture Droof (t3) Broof (t3)\nToiture et éléments supports A1 A1\nLocal Structure Charpente métallique R0 R120\nEtuves\nMurs Parpaings EI120* EI120\nToiture Revêtement de toiture Droof (t3) Broof (t3)\nToiture et éléments supports A1 A1\nDésenfumage / / Exutoire\nEntrepôts Structure Charpente métallique R0 R120\nMP & PF\nMurs Parpaings EI120* EI120\n* : sous réserve de traitement des traversants, des fissures et des inclusions d'éléments de\ncharpente.",
+      "point à laxe du tronc. Les différentes essences darbres seront portées par des symboles\nappropriés. Toute précision concernant la végétation (par exemple la nature des sols)\npourra être apportée sous forme de texte ;\n les affleurants : relevé de tout objet métier (avaloir, coffret, armoire, regard, plaque,\nbranchement, bouche à clé, poteau incendie, poteau, lampadaire, etc.), visible en surface,\nappartenant aussi bien aux réseaux GÉRÉDIS\nconcessionnaires (assainissement, eau potable, télécommunications, éclairage,\nsignalisation, gaz, produits chimiques, chauffage et climatisation, etc.) ;\n les emprises : report des limites administratives (commune, cadastre, etc.). Toute précision\nconcernant les emprises (par exemple les numéros de parcelle) pourra être apportée sous\nforme de texte ;\n les points : tous les points permettant de définir les éléments décrits ci-dessus doivent être\ngéo référencés en planimétrie et altimétrie. Les altimétries seront apparentes pour tous les\nla mesure de la lisibilité du plan.\nLes plans établis seront conformes aux règles\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 75/123"
+    ],
+    "sources": [
+      {
+        "document": "cctp_lot_1.pdf",
+        "page": 6,
+        "parent_id": "parent_304"
+      },
+      {
+        "document": "cctp_lot_1.pdf",
+        "page": 8,
+        "parent_id": "parent_307"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 21,
+        "parent_id": "parent_40"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 75,
+        "parent_id": "parent_195"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 15.975
+  },
+  "8": {
+    "id": "8",
+    "question": "Quelle est la surcharge totale à prendre en compte pour les poutres porteuses ?",
+    "reference_answer": "La surcharge totale à prendre en compte est de 250 kg/m2.",
+    "expected_document": "cctp_lot_1.pdf",
+    "expected_pages": "8",
+    "answerable": "oui",
+    "category": "valeur_technique",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:16:07.767860+00:00",
+    "response": " La surcharge totale à prendre en compte pour les poutres porteuses est de 250 kg/m2. Cette information est extraite du document cctp_lot_1.pdf, page 8.",
+    "retrieved_contexts": [
+      "CCISM – ESPACE NUMERIQUE- CCTP Lot 1\n• fourniture de l'ensemble des profils, tubes, fers, pièces spéciales,\nentretoises, platines, goussets, renforts, boulons, fixations et accessoires\ndivers nécessaires à l'exécution des ouvrages,\n• mise en œuvre de l'ensemble des ouvrages, compris assemblages de\ntoute nature et toutes sujétions de transport, manutention, levage,\nprotections, étaiements, échafaudages, etc., nécessaires au parfait\naccomplissement des travaux,\n• sujétions diverses pour liaisons avec les ouvrages béton de l'existant.\n• y compris toutes sujétions de finitions.\n3.2 STRUCTURE METALLIQUE DE L’ENVELOPPE\nAfin de supporter le plancher de la mezzanine, l'entreprise devra la réalisation de\nla structure métallique porteuse, en acier galvanisé à chaud.\nFabrication, pose et scellements des ouvrages de charpente métallique sur le\ndallage et les murs existants, comprenant :\n• Approvisionnement des profilés (portiques, poteaux, poutres, etc.),\nsuivant études et plans de structure :\no poteaux en profilés type HEA, HEB, IPE ou équivalent recevant en\npied des platines en tôle forte, \u0000\no poutres porteuses en profilé type IPN ou IPE de section appropriée\nà la surcharge totale à prendre en compte (250 kg/m2), assemblées\nsur les poteaux par des platines et goussets de report de charges,\no poutres de contreventement éventuelles en profilés dito\nassemblées sur les poutres et poteaux décrits ci-avant,\no y compris toutes ossatures complémentaires, entraxe suivant plans",
+      "La réglementation pour le canevas est la suivante :\n classe de précision planimétrique totale 3 cm ;\n classe de précision altimétrique totale 1cm.\nseptembre 2003 avec un coefficient de sécurité supérieur ou égal à 2.\nLa réglementation pour les éléments de surface du levé topographique est la suivante :\n classe de précision planimétrique totale : 7 cm ;\n classe de précision altimétrique totale : 4 cm\nseptembre 2003 avec un coefficient de sécurité supérieur ou égal à 2.\n12.7.1 Consistance\nLa prestation consiste pour l à déterminer les coordonnées X, Y et Z de points\nconstituant les sommets de la polygonale principale de précision.\nCes points sont espacés au maximum de 150 mètres. Chaque sommet de la polygonale doit être\nvisible par les sommets contigus.\n12.7.2 Matérialisation des sommets\nCette polygonale pouvant servir de support à plusieurs opérations étalées dans le temps\nmatérialisation des sommets réalisée par l sera réfléchie tout particulièrement\npour assurer une pérennité maximale de ses points.\n12.7.3 Système de référence\nToutes les données produites doivent être rattachées au système de référence en vigueur suivant :\n en planimétrie, le système géodésique RGF93 et la projection Conique Conforme (9 zones)\napplicable à la zone géographique du chantier (exemple : dans les Deux-Sèvres le système\nde référence en vigueur est le RGF93-CC47) ;\n en altimétrie NGF - IGN69 Altitudes Normales.\n12.7.4 Mode opératoire",
+      "12.6.1 Détermination de points de repère géoréférencés\nEn présence de repères géoréférencés, il faudra situer les mesures effectuées par rapport à ces\nrepères dans les 3 orientations (XYZ).\nDans le cas contraire, il faudra prendre à minima 4 points de référence pour situer les mesures\nautre entreprise certifiée.\nCes points seront marqués au sol en utilisant des clous avec une inscription spécifique permettant\nde les distinguer sans confusion.\n12.6.2 Géo référencement des réseaux et levé topographique\nLe géo référencement des réseaux enterrés est du ressort du titulaire. Les mesures devront\nEntreprise Agréée effectuera des opérations\nissus de deux déterminations distinctes.\n12.6.3 Précisions et tolérances\ntation (notamment le décret\nn°2006-272 du 3 mars 2006 modifiant le décret n° 2000-1276 du 26 décembre 2000, et les\narticles R. 554-1 à R.554-38 du Code\nLes classes de précision à atteindre pour la localisation des points sont des obligations de résultats.\ngréée pour y parvenir restent libres mais devront être\nconformes à la partie 3 de la norme.\nLa réglementation pour le canevas est la suivante :\n classe de précision planimétrique totale 3 cm ;\n classe de précision altimétrique totale 1cm.\nseptembre 2003 avec un coefficient de sécurité supérieur ou égal à 2.\nLa réglementation pour les éléments de surface du levé topographique et des réseaux mis à nu par\nméthode intrusive est la suivante :\n classe de précision planimétrique totale : 7 cm ;",
+      " les serrages mécaniques des connexions de tous les matériels ;\n le repérage mis en place, y compris sur les colonnes provisoires, ou sa continuité pour une\ncolonne électrique existante ;\n les fixations des canalisations et des matériels et leur accessibilité restreinte (capots, portes,\nConcernant les travaux sur une colonne électrique existante, les contrôles sont systématiques.\n:\n un état des lieux final contradictoire avec le propriétaire ou le syndic des parties communes\n;\n\nprocès-verbal (PV) de réception dont un modèle est joint en annexe n°5 du CCTP.\nLe propriétaire des parties communes ou son représentant doit systématiquement être convoqué\nà cet état des lieux final et contradictoire par une lettre Recommandée avec Accusé de Réception\n(RAR) avec un délai de prévenance a minima de 15 jours :\n\ndes lieux final et contradictoire relatif aux parties communes ;\n si le propriétaire ou le syndic ne se présente pas à la convocation, le Mandataire le relance\nst accepté par\nconviennent des mesures à prendre pour que cet état final soit accepté par le propriétaire ou le\nsyndic. Le PV de réception indique les réserves liées à ce refus :\n\npropriétaire ou le syndic doit être organisée ;\n\nphotos et le Procès-Verbal de réception sont tracés dématérialisation des\néchanges utilisée par GÉRÉDIS.\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 65/123"
+    ],
+    "sources": [
+      {
+        "document": "cctp_lot_1.pdf",
+        "page": 8,
+        "parent_id": "parent_307"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 73,
+        "parent_id": "parent_190"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 71,
+        "parent_id": "parent_186"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 65,
+        "parent_id": "parent_175"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 21.743
+  },
+  "9": {
+    "id": "9",
+    "question": "Quelle est la durée de la garantie de parfait achèvement ?",
+    "reference_answer": "La durée est d'un an à compter de la date de réception des ouvrages.",
+    "expected_document": "cctp_lot_1.pdf",
+    "expected_pages": "7",
+    "answerable": "oui",
+    "category": "obligation",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:16:29.514405+00:00",
+    "response": " La durée de la garantie de parfait achèvement est d'un an à compter de la date de réception des ouvrages, selon le document cctp_lot_1.pdf, page 7.",
+    "retrieved_contexts": [
+      "CCISM – ESPACE NUMERIQUE- CCTP Lot 1\n2.3 ENTRETIEN AVANT RÉCEPTION\nL'entrepreneur devra refaire, à ses frais, toutes les réparations jugées nécessaires\nà la bonne finition des ouvrages et ceci jusqu'à réception définitive des\nouvrages.\n2.4 GARANTIE DE PARFAIT ACHÈVEMENT\nLa durée de garantie correspondant à l'année de parfait achèvement est d’un an\nà compter de la date de réception des ouvrages. Pendant cette période,\nl'entretien de ses ouvrages sera à la charge de l'entreprise titulaire du présent\nlot. Toutes les défectuosités sur les ouvrages réalisés par le présent lot, qui\nviendraient à se révéler à l'usage, seront réparées aux frais de l'entrepreneur\nainsi que toutes les réfections nécessaires sans le préjudice des dommages\ncausés dont il supportera seul toutes les conséquences.\n3 DESCRIPTION SOMMAIRE DES OUVRAGES\n3.1 OUVRAGES DE CHARPENTE MÉTALLIQUE\nL'ensemble sera réalisé suivant description ci-après et plans du présent dossier\nde consultation ou avec systèmes équivalents proposés par l'entreprise et définis\navec description sommaire jointe à l'offre de l'entreprise. Dans tous les cas, les\nouvrages de charpente métallique réalisés par l'entreprise devront être justifiés\npar des notes de calculs d’un bureau de contrôle et soumises à l’approbation du\nMaître d'œuvre avant le démarrage des travaux.\nLes travaux comprendront :\n• études, plans et détails d’exécution et de chantier nécessaires à la\nréalisation du projet conformément aux règles de calcul et normes en\nvigueur.",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 25/40\n8.5 Principe d’amélioration de la résistance au feu d’une paroi existant\nL’amélioration de la résistance au feu REI120 d’une paroi à structure métallique et murs\nparpaings passent par la réalisation des travaux suivants :\n- Amélioration de la résistance au feu de la structure métallique (poteaux et poutres\ntransversales, contreventements, poutres latérales),\n- Remplacement des éléments de couverture par une couverture EI120 sur 1m de part et\nd’autre de la paroi et mise en place d’une bande de protection de réaction au feu A1 ou\nA2 sur 5m de part et d’autre,\n- Amélioration de la résistance au feu des parois latérales en bardage sur 1m de part et\nd’autre de la paroi,\n- Traitement par calfeutrement des fissures de la paroi en parpaing et des passages de\nréseaux.\nLes chapitres suivants présentent une première approche pour la réalisation des\ntravaux. Cette approche devra être validée par l’Entreprise à la remise de son offre. Il\nlui appartient de mettre en œuvre les matériaux et les modes opératoires permettant\nd’obtenir des ouvrages de résistance au feu REI120.\nFigure 1 : Adaptation de la toiture\nFigure 2 : Paroi CF insérée dans une\nfile de poteaux Figure 3 : Prolongement de la paroi\nNote : Toutes les figures du CCTP sont issues du guide CTICM SRI-17/245-CR/NB - Guide\nde vérification du comportement au feu des bâtiments à simple rez-de-chaussée en charpente\nmétallique.",
+      "13 Prestations de contrôles et de réception des ouvrages\n13.1.1 Contrôle des matériaux\nprescriptions GÉRÉDIS te des objectifs de densification.\ndoit pouvoir fournir au Mandataire sur demande les fiches de contrôles des\ndifférents matériaux utilisés.\nPour les enrobés,\nau\nMandataire.\n13.1.2 Contrôle du compactage\nLe plan de comp\népaisseur compacté,\nà la charge . Celui-ci doit réaliser les contrôles en conformité des normes NF\nP 98-331 (utilisation du pénétromètre en fonction B).\nLes contrôles sont réalisés dans le respect de la norme NF P 98-331. Soit une mesure faite a\nminima tous les 50 m de tranchée ou une par section homogène de tranchée (longueur de tranchée\ndans laquelle la pose et le compactage des différentes couches de matériaux ont été réalisé dans\nles mêmes conditions).\nLes résultats des contrôles et leurs positionnements sont remis par au\nMandataire accompagnés des fiches techniques de matériaux (cf. fiche SETRA).\nTout affaissement de tranchée, sur des voies de circulation routière ou piétonnière, constaté\npendant la garantie contractuelle de parfait achèvement est traitée immédiatement par\n13.1.3 Essais de câbles\nAprès avoir vérifié toutes les extrémités des câbles et des conducteurs de terre, balisé les zones\ne engage sa responsabilité sur les\npoints suivants :\n ;\n ;\n isolement des écrans de câble avant la confection des accessoires.\nIl peut être\nRIP représentant du CEDA.\n13.1.4 Autocontrôles\ngréée est un élément clé de son processus qualité. Il est tracé par",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 29/40\nParoi parpaing\nFigure 4 : Principe d’encoffrement des poutres inscrites dans la paroi\n9.1.3 Enduit de projection des structures non-inscrites dans la paroi\nLes éléments de structure métallique inscrits avec dépassement latéral ou traversant les murs\nseront protégées en tout point par un enduit projeté de type PROMASPRAY P300,\nconformément à un procès-verbal français en cours de validité, pour leur conférer un\nclassement R 120 avec une température critique de 500 °C.\nLes éléments qui seront enduits sont les suivants :\n- Poteaux à dépassement latéral,\n- Contreventements collés à la paroi,\n- Poutres (traverses et pannes) transversales à la paroi sur 500 mm de part et d’autre,\n- Pannes parallèles à la parois situées à moins de 500 mm de la paroi,\n- Aisseliers.\nLa protection des éléments latéraux doit permettre de décaler de la paroi la rotule plastique\nqui va se former à chaud durant l’incendie.\nLes épaisseurs de protection rapportée sur les éléments constitutifs des contreventements\ndoivent être déterminées en considérant une section exposée sur toutes les faces du profilé\nmétallique pour une durée d’exposition au feu de 2 heure et un échauffement limité à 500°C.\n9.1.4 Traitement des fissures des parois en parpaings\nUne fissure toute hauteur, de largeur 1 mm et traversante, correspondant à un mur en\npercussion a pu être observée sur l'un des murs en parpaings. L’Entreprise prendra à sa"
+    ],
+    "sources": [
+      {
+        "document": "cctp_lot_1.pdf",
+        "page": 7,
+        "parent_id": "parent_305"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 25,
+        "parent_id": "parent_46"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 89,
+        "parent_id": "parent_219"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 29,
+        "parent_id": "parent_51"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 24.937
+  },
+  "10": {
+    "id": "10",
+    "question": "Quelle doit être la hauteur des garde-corps industriels ?",
+    "reference_answer": "La hauteur requise est de 1,10 m conformément aux normes NF E 85-015.",
+    "expected_document": "cctp_lot_1.pdf",
+    "expected_pages": "9",
+    "answerable": "oui",
+    "category": "valeur_technique",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:16:54.456506+00:00",
+    "response": " Les garde-corps industriels doivent avoir une hauteur de 1,10 m [SOURCE 1 — DOCUMENT cctp_lot_1.pdf — PAGE 9 — parent_309].",
+    "retrieved_contexts": [
+      "CCISM – ESPACE NUMERIQUE- CCTP Lot 1\n3.2.1 Plancher métallique\nSupport : Structure métallique prévue au présent lot.\nComprenant :\n• Plancher en tôle larmée fixée sur la structure\n• Livré avec protection anticorrosion.\nLocalisation :\nPlancher étage\n3.2.2 Escalier métallique industriel\nRéalisation d’un escalier métallique droit avec marches métal en tôle larmée.\nDimensions selon plans architecte.\nFixation limons par platine métallique en nez de dalle du plancher haut (poutre\nIPE ou UPN selon calculs entrepris), compris toutes sujétions de fixation sur\nstructures.\nLimons métalliques (profilé UPN ou tubulaire selon calculs entreprise) et équerres\nsoudées pour pose des emmarchements (section à déterminer par entreprise).\nMarches portantes acier galvanisé sans contremarches en tôle larmée. Les marches\nseront fixées par en dessous par boulons inox sur limons intérieurs et extérieurs\nEnsemble réalisé en acier galvanisé, l’exécution sera de qualité et destinées à\nêtre apparente.\nGarde-corps industriels conforme aux normes, hauteur 1,10 m requis.\nLocalisation : Suivant plans architecte\nEscalier d’accès mezzanine : escalier droit, marche et contre marche tôle\nlarmée motif au choix du maître d'ouvrage\nDimension : Hauteur 2,60, 13 marches 25 x 18,5 environ\nLargeur volée 1,40 m\n3.2.3 Garde-corps industriel\nFourniture et pose d’un garde-corps de 1,10 m de hauteur en acier galvanisé\nconformes aux critères des normes NF E 85-015 comprenant :\n9",
+      "des spires périphériques. Dans le cas où ce contrôle met en évidence des coups ou des éraillements,\nelle doit immédiatement alerter le transporteur et le Mandataire.\nLa NF C 11-\nconducteurs de mise à la terre.\nLorsque la température ambiante est inférieure à 0°C, le câble doit être stocké dans un abri chauffé\nréchauffage, le tirage doit être différé.\nLes câbles sont déroulés, tirés et mis en place avec le plus grand soin en évitant toute torsion,\nboucle etc., et en respectant les dispositions de la NF C 11-\net les rayons de courbure sont limités aux valeurs indiquées dans les guides SéQuélec.\nPen\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 44/123",
+      "CCISM – ESPACE NUMERIQUE- CCTP Lot 1\nSommaire\n1 DISPOSITIONS GENERALES 3\n1.1 OBJET DU PRESENT LOT 3\n1.2 NORMES ET REGLEMENTS 3\n1.3 SECURITE DE CHANTIER 3\n1.4 VARIANTES 3\n2 CONSISTANCE DES TRAVAUX 4\n2.1 PRESTATION DE L'ENTREPRISE 4\n2.1 PLANS D'EXECUTION - DOSSIER DES OUVRAGES EXECUTES 4\n2.2 CONNAISSANCE DES LIEUX 5\n2.3 CONTENU DES PRIX FORFAITAIRES 5\n2.4 RECEPTION DES SUPPORTS 5\n2.5 PROTECTION DES OUVRAGES 5\n2.6 NETTOYAGE DU CHANTIER 6\n2.1 COORDINATION AVEC LES AUTRES CORPS D'ETAT 6\n2.2 QUALITE DES OUVRAGES 6\n2.3 ENTRETIEN AVANT RECEPTION 7\n2.4 GARANTIE DE PARFAIT ACHEVEMENT 7\n3 DESCRIPTION SOMMAIRE DES OUVRAGES 7\n3.1 OUVRAGES DE CHARPENTE METALLIQUE 7\n3.2 STRUCTURE METALLIQUE DE L’ENVELOPPE 8\n3.2.1 PLANCHER METALLIQUE 9\n3.2.2 ESCALIER METALLIQUE INDUSTRIEL 9\n3.2.3 GARDE-CORPS INDUSTRIEL 9\n2",
+      "ésentation sur le PGOC (cf. § 12 du présent\nCCTP).\nou des postes, en veillant à laisser une longu\nraccordement. Ils seront capotés et repérés pour faciliter le contrôle de continuité électrique (cf. §\n12 du présent CCTP).\n8.12.2 Implantation de support de ligne électrique aérienne\nTous les supports de ligne électrique aérienne sont implantés dans le sol suivant les règles de\nconstruction de deux normes principales :\n la NF C 11-001 qui définit les distances des lignes aériennes par rapport au sol et aux autres\nouvrages ;\n la NF C 11-201 qui définit, entre autres, les dimensions et la nature du massif ainsi que la\npermettant le maintien du support. Ses dimensions sont définies par la nature du sol (terre,\ngranit, etc.), les car\nhauteur, leur fonction (arrêt, alignement, HTA, BT). Le respect de ces règles normatives permet de\n(herbages, cultures, etc.), les massifs doivent dépasser la surface du sol de 10 cm et permettre le\nruissèlement des eaux de pluie (pointe de diamant).\nObligations du Mandataire :\n\nmassifs et la hauteur de la flèche du câble entre deux supports.\n la présence de ces éléments et leur cohérence doivent être contrôlées par le Mandataire\n:\n Agréée à\n;\n la plaque signalétique ou le trait disposé à une hauteur normée sur le support lui permet de\nément aux\nCAMELIA ».\n5\nprestation de Génie Civil (cf. § 10 du présent CCTP).\nNota\nréférencé en classe A (cf. § 12 du présent CCTP).\nRemarque\ncontact cutané."
+    ],
+    "sources": [
+      {
+        "document": "cctp_lot_1.pdf",
+        "page": 9,
+        "parent_id": "parent_309"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 44,
+        "parent_id": "parent_143"
+      },
+      {
+        "document": "cctp_lot_1.pdf",
+        "page": 2,
+        "parent_id": "parent_297"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 48,
+        "parent_id": "parent_150"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 21.535
+  },
+  "11": {
+    "id": "11",
+    "question": "À quel article du Code de l'Energie le document fait-il référence pour le Contrat de Mandat ?",
+    "reference_answer": "Il fait référence à l'article L. 342-2 du Code de l'Energie.",
+    "expected_document": "cctp2.pdf",
+    "expected_pages": "5",
+    "answerable": "oui",
+    "category": "information_directe",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:17:15.994864+00:00",
+    "response": " Le document [SOURCE 2 — DOCUMENT cctp2.pdf — PAGE 6 — parent_77] fait référence à l'article L.342-2 du Code de l'Energie pour le Contrat de Mandat.",
+    "retrieved_contexts": [
+      "Cahier des Charges Technique Particulier (CCTP)\napplicable aux prestations de travaux, pour la\nconstruction des Ouvrages dédiés, sous la responsabilité\ndu Mandataire en -2 du\nt\nRésumé\nCe document présente les exigences applicables aux prestations de travaux de\nconstruction branchement) construits sous la maîtrise\n-2 du\nCode\net à ses frais.\nIl précise les modalités .\nposte source », ni aux travaux de forages\ndirigés.\nHistorique du document D-R3-SU-33\nNature de la modification Indice Date de publication\nCréation A 01/09/2022",
+      "2 Définitions\nLibellé Définition\nDésigne le contrat de prestation de travaux auquel est attaché le\nprésent Cahier des charges Technique Particulier (CCTP).\nContrat\nconstruction des Ouvrages Mandataires.\nDésigne le contrat conclu entre GÉRÉDIS et le Mandataire dans le\n- nergie.\nContrat de Mandat\nContrat par lequel GÉRÉDIS mandate en son nom et pour son\ncompte le Mandataire pour réaliser les Ouvrages Mandataire.\nD -traitant\nde cette dernière avec lesquels le Mandataire a conclu un Contrat\nEntreprise Agréée\n-2 du nergie.\nsous-traitant doivent être agréés par GÉRÉDIS\nExploitant GÉRÉDIS aux ouvrages en exploitation.\nIl intervient dans la planification des prestations et des accès, et\nDésigne le Maître d'ouvrage mentionné à l'article L.342-2 du Code\nGÉRÉDIS\n.\nD\nMandataire Il agit au nom et pour le compte de GÉRÉDIS\n-2 du Code de\nnergie.\nDésigne tout ou partie des ouvrages à construire et dédiés au seul\nOuvrage(s) Mandataire colonnes électriques) et/ou de travaux électriques relatif à la\nconstruction de réseaux et/ou de branchements individuels ou\nGÉRÉDIS.\nPartie, Parties Désigne les signataires du CCTP.\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 6/123",
+      " les arrêtés de voirie, et/ou de police de la circulation ;\n le journal de bord reprenant le suivi du chantier et les évènements significatifs intervenus\narrêts de ch , etc. ;\n10\n le cas échéant\nopération, PPSPS, compte rendu de réunion de coordination SPS, etc. ;\n les initiatives prises ;\n les réclamations reçues et les réponses apportées ;\n\n;\n la liste des contrôles,\n;\n\nMandataire y compris ceux prévus par la réglementation et les normes en référence\n;\n le rapport de compactage ;\n\n\nMandataire ;\n les éventuelles fiches de contrôles des différents matériaux utilisés, par exemple pour les\nenrobés ;\n\norganismes de collecte ;\n les documents de retour ;\n la mise à jour du tableau des terres avec les valeurs réelles mesurées après travaux ;\n la mise à jour du tableau des conducteurs, quantités mises à jour en cas de modification du\ntracé pendant la phase de réalisation des travaux ;\n la mise à jour du tableau de traçabilité des accessoires (repère unique) complété avec les\nréférences\n« Poste HTA/BT ou armoire de coupure HTA » ;\n\nde GÉRÉDIS ;\n tous les documents issus de la procédure de consignation/déconsignation ;\n un exemplaire du PGOC complet, comprenant éventuellement les conducteurs de mise à la\nterre, ou un plan ou un croquis des Ouvrages Mandataire construits et/ou déposés, avec la\nposition et le nombre de marqueurs posés selon les dispositions définies au chapitre 12.2.\ndu présent CCTP.\n:\n10 Direction Régionale Environnement Aménagement Logement",
+      "9 Prestations de travaux en sous-section 4 sur des\nmatériaux amiantés\nCe chapitre décrit les exigences techniques pour la réalisation de travaux nécessitant une\nint\nmatériels, etc.) et correspondant aux activités de la sous-section 4 du décret n°2012-639 du 04\nmai 2012 relatif aux interventions sur des matériaux, des produits, des équipements, des matériels,\nIl décrit également les mesures à prendre en terme de gestion des déchets lorsque les enrobés\ncontiennent des HAP (cf. e n°1 du présent CCTP).\nEn plus des règles édictées dans le présent document, les travaux sont réalisés en appliquant\nnotamment :\n le décret n°2011-629 du 3 juin 2011 relatif à la protection de la population contre les risques\nsanitaires liés à une ;\n le décret n°2012-639 du 4 mai 2012 relatif aux dispositions particulières aux interventions\nsur des matériaux, des équipements, des matériels ou des articles susceptibles de\n;\n le décret n°2017-899 du 9 mai 2017 relatif au repérage de l'amiante avant certaines\n;\n\n;\n ;\n ;\n ion des déchets non dangereux ;\n les normes NF X 46-020, NF X 46-10, NF X 46-11, NF X 43-269, NF X 43-50 et EN ISO\n16000-7.\nObligations du Mandataire :\n-97 du Code du Travail, le Mandataire doit fournir, pour chaque\n:\n ou tout organisme agissant en son nom\n;\n le Dossier Technique Amiante (DTA), les Dossiers Amiante Partie Privative (DAPP) du bâti\n(immeub ;\n le repérage avant travaux (RAT) amiante dans les immeubles bâtis conformément à la\nnorme NF X 46-"
+    ],
+    "sources": [
+      {
+        "document": "cctp2.pdf",
+        "page": 1,
+        "parent_id": "parent_71"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 6,
+        "parent_id": "parent_77"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 91,
+        "parent_id": "parent_222"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 51,
+        "parent_id": "parent_155"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 22.787
+  },
+  "12": {
+    "id": "12",
+    "question": "Qui est désigné comme Responsable de Traitement des données à caractère personnel ?",
+    "reference_answer": "Le Responsable de Traitement est le Mandataire signataire du marché.",
+    "expected_document": "cctp2.pdf",
+    "expected_pages": "8",
+    "answerable": "oui",
+    "category": "obligation",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:17:38.787604+00:00",
+    "response": " Le Responsable de Traitement des données à caractère personnel est le Mandataire signataire du marché, selon les documents cctp2.pdf [page 8 - parent_80] et [page 8 - parent_79].",
+    "retrieved_contexts": [
+      "prestations.\n4.2.2 Obligations vis-à-vis du Responsable de\nTraitement\nLe Responsable de Traitement est le Mandataire signataire du marché.\ntreprise Agréée :\n garantir la confidentialité des données à caractère personnel traitées pour les seules\n;\n sur demande du Mandataire à renvoyer au terme du marché toutes les données à\ncaractère personnel au responsable de Traitement ;\n\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 8/123",
+      "4 Dispositions générales et obligations des Parties\nGénéralités\nMandataire. Il a pour but de précis\ndécrites dans les documents associés qui sont rappelés en référence à ce document.\nou tout événement qui remet en cause la date de fin\nédiatement communiqués au Mandataire.\n-à-vis de tous les\ninterlocuteurs (clients, propriétaires, ri\nou indirect avec la mission qui lui est confiée.\nRespect du Règlement Général sur la Protection des Données\npersonnelles\nDans le cadre de leurs relations contractuelles, les P t à respecter les Lois de\nProtection des Données Personnelles et, en particulier, la loi n° 78-17 du 6 janvier 1978 relative à\nl'informatique, aux fichiers et aux libertés ainsi que le Règlement (UE) 2016/679 du Parlement\neuropéen et du Conseil du 27 avril 2016 applicable à compter du 25 mai 2018.\n4.2.1 Description des traitements de Données à Caractère Personnel dans le\ncadre du marché\nLes catégories de personnes concernées par le cadre des prestations confiées par le Mandataire\nsont les propriétaires, leurs représentants, les exploitants agricoles,\nclients.\nLes données à caractère personnel traitées sont les noms, coordonnées, adresses mails,\ntéléphones des particuliers, numéros clients, ainsi que toutes\nautres données personnelles auxquelles aurait accès pour réaliser les\nprestations.\n4.2.2 Obligations vis-à-vis du Responsable de\nTraitement\nLe Responsable de Traitement est le Mandataire signataire du marché.\ntreprise Agréée :",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 8/40\n3.2 Visite / Connaissance des lieux\nLors de la remise de son offre, l’Entreprise spécifiera les utilités et équipement à\ndéplacer. Cette liste comportera les éléments qu’elle prévoit de déplacer et les éléments\nque le lot SSI/Electricité devra déplacer. Si des éléments supplémentaires devaient être\nidentifiés durant le chantier, ils seront à la charge de l’Entreprise.\nL’Entreprise est réputée avoir pris connaissance du site et notamment de ses contraintes\nd’installation (travail en hauteur, difficulté d’accès, ambiance difficile pour les intervenants,\nzones ATEX, etc.).\nElle prendra toutes les dispositions nécessaires pour travailler sur ce type de site ainsi que le\nbalisage, nettoyage régulier, etc.…, pour éviter tout accident avec les personnels pouvant être\nprésents dans les bâtiments et à l’extérieur.\nLes travaux d’installation seront réalisés dans une usine en fonctionnement.\nL’Entreprise prendra en compte les difficultés d’intervention dans l’usine et notamment dans\nla production (moyens de levage, nacelles, échafaudages, travail par points chauds, etc…).\nElle prendra également toutes les dispositions nécessaires (bâchage, nettoyage régulier,\nbalisage de sécurité, etc…) pour éviter d’endommager les installations. Ces mesures seront\nvalidées au préalable par DEN BRAVEN.\nEn outre, elle fournira à son personnel, les équipements de sécurité adaptés (chaussures de",
+      "Personnelles au Mandataire désigné agissant pour le compte du Responsable de\nTraitement.\n(annexe n°2).\nLes documents administratifs et techniques ainsi que les renseignements complémentaires qui\nsont listés dans le CDAT en annexe sont primordiaux.\nLe con\ndisparaître en fonction des textes de loi ou réglementaires.\nNota : pour les prestations liées à la ré ou en\ninjection les chapitres 7 et 11 du présent CCTP dressent et complètent les obligations des deux\nparties pour ces prestations.\nObligations du Mandataire :\ngéré dans\ndématérialisation des échanges utilisée par GÉRÉDIS, avant réalisation des\nprestations. Le CDAT inclut les éléments du CFAE se rapportant à la solution technique validée.\nt de son\nCFAE.\nLes pièces nécessaires à la réalisation de la prestation sont consultables sur le chantier, les autres\nLe CDAT comprend notamment :\n ;\n GÉRÉDIS ;\n :\no -planification, comportant au minimum\nune date de début (compatible avec la durée des démarches administratives\npréalables aux travaux) et une date de fin ;\no le cadre réglementaire de coordination de sécurité (réglementation générale ou\nréglementation particulière BTP) ;\no le cas échéant, les coordonnées du coordonnateur Santé Prévention Sécurité et\nProtection de la Santé (SPS) ;\no la description synthétique de la nature et de la consistance de la prestation ;\no les éventuels postes de commandes spécifiques aux actes clés de la réglementation\n« DT-DICT » : marquage-piquetage, éventuelles Investigations Complémentaires (IC)"
+    ],
+    "sources": [
+      {
+        "document": "cctp2.pdf",
+        "page": 8,
+        "parent_id": "parent_80"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 8,
+        "parent_id": "parent_79"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 8,
+        "parent_id": "parent_13"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 9,
+        "parent_id": "parent_81"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 23.164
+  },
+  "13": {
+    "id": "13",
+    "question": "Quelle est la hauteur de recouvrement exigée pour une tranchée en terrain agricole labourable ?",
+    "reference_answer": "La hauteur de recouvrement exigée est de 110 cm.",
+    "expected_document": "cctp2.pdf",
+    "expected_pages": "39",
+    "answerable": "oui",
+    "category": "valeur_technique",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:18:01.958966+00:00",
+    "response": " La hauteur de recouvrement exigée pour une tranchée en terrain agricole labourable est de 110 cm, selon le document cctp2.pdf, page 39.",
+    "retrieved_contexts": [
+      "Tout changement de coupe-type par rapport au dossier technique ou au Contrat est constatée\npar le Mandataire.\nprend les dispositions pour assurer la sécurité des personnels selon les\ndispositions du Code du Travail et des normes en vigueur, notamment pour éviter les éboulements,\ndécompressions ou atteinte aux ouvrages. Elle prend aussi les dispositions pour assurer la sécurité\ndes tiers.\nSauf spécification particulières de GÉRÉDIS :\n pour les travaux ponctuels, les fouilles doivent permettre de respecter les hauteurs de\nrecouvrement précisées dans le tableau suivant :\nNature de la tranchée Hauteur de recouvrement (cm)\nDomaine public\nChaussée en transversal ou longitudinal 85\nTrottoir, accotement, autres 65\nDomaine privé\nTerrain agricole labourable 110\nAutre domaine privé 80\n pour les niches et fouilles de branchement, elles ont les dimensions suivantes quand les\nraccordements sont effectués par GÉRÉDIS :\nProfondeur\nsous\nTension\nDésignation accessoires Longueur (m) Largeur (m) génératrice\nTravaux\ninférieur câble\n(m)\nBoîte de jonction 4,0 1,0 0,2\nBoîte de dérivation 4,0 1,0 0,2\nRaccordement de poste en\n6,0 1,0 0,2\nRaccordement de poste en\nHTA\ndouble dérivation (montage en 6,0 1,0 0,2\ndécalé)\nRaccordement de poste en\ndouble dérivation (montage sur 4,0 1,5 0,2\nun même plan)\nBT sous Boîte de jonction 2,5 1,0 0,3\ntension Boîte de dérivation 2,5 1,0 0,3\nBT hors Boîte de jonction 2,5 1,0 0,2\ntension Boîte de dérivation 2,5 1,0 0,2\ndans le tableau ci-",
+      "Tout nouvel ouvrage posé devra être capoté et repéré aux extrémités pour permettre de faciliter\ndes\ntravaux électriques (cf. § 10 du présent CCTP).\nForages et fonçages\n-traitant réalisant des travaux sans tranchée, en fonçage ou en\nforage (hors forage dirigé), a passé avec succès les PQF Génie Civil Electricité (GCE) et/ou\nTerrassement Ponctuel Electricité (TPE).\nL :\n pour le fonçage : le fonceur pneumatique ou « fusée » qui se déplace de façon indépendante\ndans le sol en compactant le terrain de part et d'autre. Cette technique non dirigeable est\nfacilement déviée par des obstacles ou des anciennes tranchées. Son utilisation doit être\nréservée à des traversées de faible\nLa mise en place du fourreau peut se faire directement derrière l'outil ou par traction ;\n pour le forage :\ne de forage rotative. Un marteau fond de trou assurant une percussion\npeut compléter le dispositif de forage. Les déblais sont refoulés par la tarière, et les\nfourreaux sont mis en place lors du forage.\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 46/123",
+      "coffrets, colonnes montantes, raccordements émergents). Les équipements (boîtes sous trottoir,\njonctions, bouts perdus et mise à la terre) seront également relevés, ainsi que les poteaux avec\ncaractéristiques du support (BTA, HT, éclairage, t .\ndra prévoir\nun nouveau passage.\ndes équipements pourra être joint au fichier DWG ou DGN.\n12.11.3 Protections\nLes protections mécaniques ou thermiques, en béton ou en métal, placées pour protéger les\nécartement insuffisant avec un réseau tiers, sont à relever en position et altimétrie.\n12.11.4 Réseaux des autres concessionnaires\nAu sein de la tranchée ouverte, lors du relevé des réseaux GÉRÉDIS, les passages de réseaux des\nautres concessionnaires (assainissement, télécommunications, chauffage, éclairage, gaz, etc.) sont\nà relever de la manière suivante : un point sur la génératrice supérieure en entrée et sortie de\ntranchée, et relevé des affleurants des chambres. La nature du réseau est également à reporter\nsur le plan.\n12.11.5 Code de rattachement\nLes éléments caractéristiques du réseau, ainsi que les changements de direction de celui-ci, sont à\ncoter par rapport aux éléments topographiques structurants.\nCes cotes doivent représenter impérativement des distances horizontales.\nChaque cote doit être définie par deux points connus en coordonnées : ces points sont à relever sur\nle terrain, que ce soit en\nplan est fourni.\n12.11.6 Caractéristiques de relevé en tranchée fermée",
+      "12.11.2 Caractéristiques de relevé par éléments en tranchée ouverte\n12.11.2.1 Réseaux GÉRÉDIS\nOutre la justesse du positionnement géo référencé des ouvrages, le tracé des réseaux et\nmécaniques (tels que les fourreaux). Les branchements doivent être rattachés au réseau principal\nbien identifié.\nLes éléments à repérer sont :\n les accessoires de réseau (boites souterraines et remontées aériennes) ;\n les postes ;\n les organes de coupure ;\n les canalisations ;\n les vannes ;\n les chambres ;\n les c\ncellules) ;\n chaque changement de direction supérieur à 10 grades ;\n un m\nSur un linéaire de tranchée avec nappe de câbles, le levé des coordonnées X, Y et Z se fait à partir\nde la génératrice supérieure des câbles constituant la nappe.\nconstruction en respectant la norme attendue. Les points caractéristiques de la tranchée (largeur\nvariation de pente du terrain naturel.\nLes points de câbles et de réseaux seront repérés sur le plan de récolement et placés dans le\ntableau de points en tant que points levés.\nLe dossier de récolement doit comporter les informations concernant les conditions de déroulage\ndes câbles et de pose des réseaux. Sur le plan de récolement, doit figurer les renseignements\nsuivants :\n le type de câble et fourreau (section) ;\n le tronçon déroulé (y compris fourreaux en attentes) ;\n ;\n la date de pose ;\n la température de déroulage et les conditions de stockage ;\n le positionnement des boîtes et/ou des points singuliers des réseaux ;"
+    ],
+    "sources": [
+      {
+        "document": "cctp2.pdf",
+        "page": 39,
+        "parent_id": "parent_132"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 46,
+        "parent_id": "parent_147"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 79,
+        "parent_id": "parent_201"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 78,
+        "parent_id": "parent_199"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 22.966
+  },
+  "14": {
+    "id": "14",
+    "question": "Quel est le diamètre intérieur minimal autorisé pour un fourreau de câble de branchement BT ?",
+    "reference_answer": "Le diamètre intérieur minimal peut être de 50 mm.",
+    "expected_document": "cctp2.pdf",
+    "expected_pages": "43",
+    "answerable": "oui",
+    "category": "valeur_technique",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:18:24.928360+00:00",
+    "response": " Le diamètre intérieur minimal autorisé pour un fourreau de câble de branchement BT est de 50 mm [SOURCE 1, page 43].",
+    "retrieved_contexts": [
+      "\ntout genre) ;\n pour valider la section du câble et prévoir son éventuel déclassement.\nLes fourreaux et tubes PE laissés en attente doivent être rebouchés au plâtre ou à la mousse\npolyuréthane expansive. Les pénétrations dans les bâtiments doivent être étanches aux\nécoulements des fluides.\nLorsque le câble est déroulé dans le fourreau, il convient de mettre en place un manchon\n« chaussette » ou une extrémité de fourreau qui permet d obturer les extrémités ou a minima un\nNota : pour des soucis dexploitation et de mise en uvre, ne pas privilégier le passage en unipolaire\nêtre remplacé pour faciliter la recherche par échométrie.\nLe\nRappel : Chaque câble doit être placé dans un fourreau distinct. Le diamètre intérieur des fourreaux\ndoit être approprié au diamètre extérieur du câble et ne doit pas être inférieur à 80 mm sauf pour\nles câbles de branchement BT, pour lesquels il peut être de 50 mm (en principe 1,5 à 2 fois le\ndiamètre extérieur du câble).\n, le tableau ci-dessous indique le diamètre minimal des fourreaux à utiliser en\nfonction des câbles :\nDiamètre extérieur\nDiamètre extérieur\nType de câble Section du câble (mm²) mini du fourreau\nmini du câble (mm)\nTPC (mm)\n4x35 Al 28 63\nNF C 33-210 ou 3x95+1x50 Al 36 90\néquivalent 3x150+1x70 Al 40,5 110\n3x240+1x95 Al 51 125 (160 en pratique)\n3x95 Al 70 160\nNF C 33-226 ou\n3x150 Al 80 160\néquivalent\n3x240 Al 90 160\nouvrages déroulés dans ces fourreaux.",
+      "de traction à\nla valeur fixée par le constructeur du câble. Les efforts ne doivent généralement pas dépasser 3\ndaN par mm² de métal conducteur pour un tirage par chaussette et émerillon. Pour contrôler ces\nefforts, un dynamomètre si possible avec limiteur\nLes changements de direction sont déterminés de telle façon que le rayon de courbure du câble,\nune fois déroulé, ne soit pas inférieur à 10 fois son diamètre extérieur.\nSuivant la méthode et la machine utilisée pour la pose du câble, on distingue deux types de\ndéroulage :\n\nest alors fixe. Dans cette phase de tirage, le rayon de courbure du câble ne doit pas être\ninférieur à 20 fois son diamètre extérieur ;\n\nmachine. Le rayon de courbure autorisé lors de\nà 1 m en tout point du câble ;\n, le tableau ci-dessous indique les efforts de traction et les rayons de courbure à\nen fonction des câbles :\nDiamètre Effort de\nRayon mini\nType de Section du câble extérieur traction Rayon mini\npendant le\ncâble (mm²) mini du maxi sur câble posé\ntirage\ncâble\n4x35 Al 28 mm 420 daN 560 mm 280 mm\nNF C 33-210 3x95+1x50 Al 36 mm 1005 daN 720 mm 360 mm\nou équivalent 3x150+1x70 Al 40,5 mm 1560 daN 810 mm 405 mm\n3x240+1x95 Al 51 mm 2445 daN 1020 mm 510 mm\n3x95 Al 70 mm 855 daN 1400 mm 700 mm\nNF C 33-226\n3x150 Al 80 mm 1350 daN 1600 mm 800 mm\nou équivalent\n3x240 Al 90 mm 2160 daN 1800 mm 900 mm\nLe câble ne doit pas être collé directement aux parois verticales de la tranchée afin d éviter des",
+      "3x240+1x95 Al 51 125 (160 en pratique)\n3x95 Al 70 160\nNF C 33-226 ou\n3x150 Al 80 160\néquivalent\n3x240 Al 90 160\nouvrages déroulés dans ces fourreaux.\nNota : il y a quelques années, la prolongation de la descente aérosouterraine avec le câble BT\nque le fourreau TPC accueillant le câble BT aérien étaient fixés et noyés dans le béton du massif du\npoteau le tout à moins de 1 mètre dudit support. Désormais, cette dérogation est uniquement\nautorisée pour la pose de câble de branchement aérien à puissance limitée (NF C 33-209). Pour\nles câbles de réseau (y compris branchement à puissance surveillée), il est donc impératif de\nréaliser une jonction aérosouterraine sous la protection mécanique entre le câble aérien et le câble\nsouterrain pour toutes les remontées aérosouterraines basse tension de réseau et ce quel que soit\nla distance en\nPour ces remontées aérosouterraines sur support ou façade, un fourreau est installé dans le massif\ndu support ou fixé contre le bas de la façade pour le passage du câble. Des protections mécaniques\nconvenables (goulotte en matière plastique, pas de tube acier) protègent les câbles depuis 0,50\nmètre en dessous du niveau du sol jusqu'à au moins 2 mètres au-dessus.\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 43/123",
+      "coup ou éraillement.\nLes extrémités des câbles seront capotées et repérées.\nNota : il y a quelques années, la prolongation de la descente aéro souterraine avec le câble BT\nTorsadé issu de la ligne aérienne était autorisée si, et seulement si, le socle de\nque le fourreau TPC accueillant le câble BT étaient fixés et noyés dans le béton du massif du poteau\nle tout à moins de 1 mètre dudit support. Cette dérogation est désormais supprimée, étant donné\nque le câble torsadé NF C33-\n-distances à respecter entre les ouvrages, les bâtis,\nle sol et les végétaux.\nConcernant la réalisation des mises à la terre des ouvrages aériens (HTA et BT), elle devra\nrespecter les emplacements, sections, longueurs, et formes et les éventuels apports de matériaux\nNota : dans la mesure du possible, il y a lieu de chercher à effectuer les mises à la terre du neutre\nsur des poteaux et non pas sur des façades.\n:\n\nsont suscept :\nsupport est maîtrisé si le salarié porte ses vêtements de travail (bras couverts) et des gants\nde travail.\nQuand les salariés sont contraints de monter au moyen de grimpettes, le Mandataire et\ngrer\n;\n si les supports sont traités aux sels métalliques (couleur verte pâle), le salarié peut monter\nau poteau avec ses vêtements de travail et des gants de travail sans équipement de\nprotection complémentaire.\nAccessoires électriques et mise à la terre\n-traitant réalisant les accessoires et raccordements électriques a"
+    ],
+    "sources": [
+      {
+        "document": "cctp2.pdf",
+        "page": 43,
+        "parent_id": "parent_140"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 45,
+        "parent_id": "parent_144"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 43,
+        "parent_id": "parent_141"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 56,
+        "parent_id": "parent_162"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 24.539
+  },
+  "15": {
+    "id": "15",
+    "question": "Quels documents le Mandataire doit-il fournir pour le repérage de l'amiante dans un immeuble bâti ?",
+    "reference_answer": "Il doit fournir le Dossier Technique Amiante (DTA) et le Repérage Avant Travaux (RAT).",
+    "expected_document": "cctp2.pdf",
+    "expected_pages": "51",
+    "answerable": "oui",
+    "category": "synthese",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:18:49.471678+00:00",
+    "response": " Le Mandataire doit fournir les documents suivants pour le repérage de l'amiante dans un immeuble bâti :\n\n1. Le CDAT comprenant les plans électriques en place [source 1, page 62].\n2. En plus des plans électriques, le Mandataire doit fournir un état des lieux contradictoire lorsque les travaux sont réalisés dans le domaine privé [source 3, page 21].\n\nIl est à noter que l'amiante n'est pas explicitement mentionné dans le contexte fourni, mais les travaux électriques peuvent impliquer la présence de matériaux contenant de l'amiante. Les règles concernant l'amiante sont définies dans d'autres documents, tels que le Code de la santé publique ou le Code du travail.",
+    "retrieved_contexts": [
+      "Sur demande du Mandataire, certains\nTypologie des prestations concernées\nCes travaux concernent les opérations suivantes de :\n électrique sans réemploi de matériel existant, sans dépose, ni\nbâtis neufs ou en rénovation (sans occupants) ;\n rique et de ses dérivations individuelles\n(DI) avec du matériel neuf dans un immeuble bâti existant ;\n\nPoints de Livraison\n(PDL)) ;\n raccordement spécifique aux infrastructures de recharge des véhicules électriques (IRVE)\nsur une colonne électrique existante ;\n\nun immeuble bâti existant comportant de la dépose et de la pose, de réemploi de matériel\nprovisoire et des opérations de dépose définitives :\no remplacement partiel « à lidentique » dun tronç\nélectrique existante (éléments du circuit électrique, CCPC, SPCM, Distributeur\n;\no ;\no trique provisoire avec reprise des DI sous tension dans un\n;\no les interventions sur une DI existante (CCPI, liaison électrique, panneau de contrôle\net de protection, disjoncteur, compteur) ;\no les déposes définitiv\n(immeuble voué à la rénovation ou à la destruction).\nEn plus de leurs obligations définies notamment dans les chapitres 4, 5 et 6 du CCTP.\nObligations du Mandataire :\n fournir le CDAT comprenant le ;\n\nélectrique en place ;\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 62/123",
+      " planification de préparation (coordination de sécurité) et de réalisation ;\n traiter les besoins de compléments de planification qui peuvent apparaître en cours de\nMatériels\n4.6.1 Livraisons et transport\nObligations du Mandataire :\nexemplaire de la commande de matériel/Liste de matériel (une des pièces du CDAT ou adressé\nLes quantités, les\nchantier), et le jour de rendez-vous figurent sur la commande de matériel ou dans tout autre\ndocument mis à la disposition par le Mandataire.\nSauf cas exceptionnel, les moyens de manutention nécessaires au déchargement ou chargement\nLe Mandataire est responsable des démarches administratives relatives à la circulation routière\npour les livraisons de matériel. Si elles nécessitent un dispositif spécifique, ces démarches et/ou leur\nans le cadre de la réalisation du\nchantier.\n:\nprend sous sa responsabilité le matériel fourni par le Mandataire ; ce transfert\nde responsabilité prend effet après déchargement et signature commune de la lettre de voiture.\ninforme le Mandataire de ses disponibilités.\n:\n le nom du réceptionnaire (dépositaire) et son numéro de téléphone ;\n le(s) lieu(x) de livraison de son choix (ses locaux, ou lieu de stockage proche du chantier - le\n-\ncirculation- horaires-, etc.).\n:\n être présent à la livraison du matériel ;\n prendre sous sa respo\nmatériel.\nRemarque\nvaine .\nEn cas de livraison et stockage de matériel (également pour les matériaux et baraquement) sur le\nchantier ou à proximité, Elle devra faire son affaire :",
+      " posséder les habilitations électriques délivrées par son employeur, dans le cadre de la NF\nC 18-510 ;\n\nTension (ITST) correspondant aux travaux à réaliser délivrée par son employeur ;\n être en mesure de présenter sur le chantier leur carte professionnelle ou équivalent et les\nhabilitations correspondantes aux travaux à réaliser.\n-dessus et inscrire ses\nactivités dans le respect GÉRÉDIS.\n(employeur) qui délivre à ses chargés\nà mettre ces éléments à disposition de GÉRÉDIS si GÉRÉDIS en fait la demande.\nGÉRÉDIS\n(CEX) de contrôler la conformité des IPS des employeurs valant accès permanents.\n5.4.2 Travaux à proximité des ouvrages électriques\nPour réaliser des prestations uniquement de génie civil (terrassement, confection de dalle de poste,\nRéglementation en matière de Sécurité des tiers\n5.5.1\nla\nréglementation générale en matière de coordination de sécurité. Dans ce cas, de nouveaux acteurs,\ncomme le gestionnaire de voirie, peuvent être invités.\nObligations du Mandataire :\n Agréée et le cas\nreprésenté par un RIP ;\n fournir ou effectuer un état des lieux contradictoire, notamment lorsque les travaux sont\nréalisés dans le domaine privé ;\n sur des points particuliers de ;\n convenir avec les acteurs présents des lieux de vie et de stockage des matériels, des\nmatériaux et des déchets (supports bois ou béton par exemple) sur le chantier ;\n vérifier les autorisations de voirie, les arrêtés de circulation ou de police ;",
+      "4 Dispositions générales et obligations des Parties\nGénéralités\nMandataire. Il a pour but de précis\ndécrites dans les documents associés qui sont rappelés en référence à ce document.\nou tout événement qui remet en cause la date de fin\nédiatement communiqués au Mandataire.\n-à-vis de tous les\ninterlocuteurs (clients, propriétaires, ri\nou indirect avec la mission qui lui est confiée.\nRespect du Règlement Général sur la Protection des Données\npersonnelles\nDans le cadre de leurs relations contractuelles, les P t à respecter les Lois de\nProtection des Données Personnelles et, en particulier, la loi n° 78-17 du 6 janvier 1978 relative à\nl'informatique, aux fichiers et aux libertés ainsi que le Règlement (UE) 2016/679 du Parlement\neuropéen et du Conseil du 27 avril 2016 applicable à compter du 25 mai 2018.\n4.2.1 Description des traitements de Données à Caractère Personnel dans le\ncadre du marché\nLes catégories de personnes concernées par le cadre des prestations confiées par le Mandataire\nsont les propriétaires, leurs représentants, les exploitants agricoles,\nclients.\nLes données à caractère personnel traitées sont les noms, coordonnées, adresses mails,\ntéléphones des particuliers, numéros clients, ainsi que toutes\nautres données personnelles auxquelles aurait accès pour réaliser les\nprestations.\n4.2.2 Obligations vis-à-vis du Responsable de\nTraitement\nLe Responsable de Traitement est le Mandataire signataire du marché.\ntreprise Agréée :"
+    ],
+    "sources": [
+      {
+        "document": "cctp2.pdf",
+        "page": 62,
+        "parent_id": "parent_171"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 12,
+        "parent_id": "parent_87"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 21,
+        "parent_id": "parent_103"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 8,
+        "parent_id": "parent_79"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 34.906
+  },
+  "16": {
+    "id": "16",
+    "question": "Quels sont les deux sites parisiens concernés par l'étude de vulnérabilité ?",
+    "reference_answer": "Les deux sites sont le Jardin des Plantes et l'îlot Buffon-Poliveau.",
+    "expected_document": "cctp3.pdf",
+    "expected_pages": "1",
+    "answerable": "oui",
+    "category": "information_directe",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:19:24.380456+00:00",
+    "response": " Les deux sites parisiens concernés par l'étude de vulnérabilité sont le Jardin des Plantes et l'îlot Buffon-Poliveau. [SOURCE 1 — DOCUMENT cctp3.pdf — PAGE 3 — parent_283]",
+    "retrieved_contexts": [
+      "Etude de la vulnérabilité\nAu risque d’inondation CCTP 20/03/2011\n1. Présentation générale\n1. Contexte de la consultation\nLe Muséum National d’Histoire Naturelle, en tant qu’établissement culturel1 touché par le\nPlan de Prévention des Risques d’Inondation (PPRI) de Paris, a le devoir d’établir un plan de\nprotection contre les inondations, et souhaite à cet effet effectuer une analyse détaillée de sa\nvulnérabilité face aux inondations.\n2. Objet de la consultation\nLe présent marché est un marché de prestations intellectuelles dont l’objet est la réalisation\nd’un diagnostic de vulnérabilité aux risques d’inondation de deux sites parisiens voisins du\nMuséum National d’Histoire Naturelle : le Jardin des Plantes et l’îlot Buffon-Poliveau. La\nvulnérabilité des sites sera étudiée dans le cas d’une crue cinquantennale et dans le cas d’une\ncrue centennale.\n3. Définition de la mission\nLa mission se déroulera en trois étapes :\n1ère étape : recueil de données et analyse des sites, notamment à travers l’échange avec les\ndifférents référents désignés par le MNHN\n2ème étape : préconisations d’actions et travaux, chiffrages de ces préconisations, chiffrages\ndes dégâts potentiels si les préconisations ne sont pas respectées et intégration des\npréconisations au Schéma Pluriannuel de Stratégie Immobilière du MNHN (voir §1.5).\n3ème étape : mission d’assistance à maîtrise d’ouvrage : assistance sur le choix des moyens\ninternes et externes à mettre en œuvre\n4. Les référents MNHN",
+      "sous stations\n- un plan du réseau de gaz de chaque site\n- un plan du réseau d’assainissement de chaque site\n- le plan de zonage du PPRI de Paris sur les deux sites\n- le plan de niveau de la crue de 1910 sur les deux sites\n- le plan des carrières présentes sous le Jardin des Plantes\n- données hydrogéologiques sur les mouvements d’eau sous le Jardin des Plantes\n- les plans de l’ensemble des bâtiments des deux sites\n- la liste des ICPE\n- recensement des locaux contenant des produits dangereux\n- l’étude de vulnérabilité réalisée en 2002\n- liste des opérations SPSI\n2. Contenu de la mission\nDans ce qui suit, toute analyse de risque ou de vulnérabilité sera réalisée systématiquement\ndeux fois : dans le cas d’une crue cinquantennale et dans le cas d’une crue centennale. De\nmême pour les synthèses qui seront réalisées pour chacun des deux cas.\nDans un premier temps, la mission de l’entreprise sera :\n2",
+      "Etude de la vulnérabilité\nAu risque d’inondation CCTP 20/03/2011\nAnalyse des réseaux\nIl s’agira d’identifier les réseaux et portions de réseaux qui présentent une vulnérabilité face à\nl’inondation, et d’évaluer cette vulnérabilité :\n- Réseaux « informatiques » (référent : Direction des Systèmes d’Information)\n• Etude de la vulnérabilité des câbles de courant faible : téléphonie,\nvidéosurveillance, GTB, SSI\n• Etude de la vulnérabilité de l’Autocom et des serveurs\n- Réseau CPCU (référent : Direction de la Rénovation et de la Maintenance)\n• Etude de la vulnérabilité des conduites\n• Etude de la vulnérabilité des sous-stations\n- Réseau électrique (référent : DRM)\n• Etude de la vulnérabilité des postes haute tension\n• Etude de la vulnérabilité des groupes électrogènes\n- Réseau de gaz (référent : DRM)\n• Etude de la vulnérabilité des conduites\n- Réseau d’eau potable (référent : DRM)\n• Etude de la vulnérabilité des conduites\n- Réseau d’eau non potable (référent : DRM)\n• Etude de la vulnérabilité des conduites\n• Etude de la vulnérabilité des surpresseurs\nIl sera pris en compte la possibilité d’une panne électrique dans l’évaluation de la\nvulnérabilité des équipements nécessitant une alimentation.\nAnalyse des bâtiments\nIl s’agira d’identifier les locaux étant susceptibles d’être inondés, que ce soit directement par\nle débordement de la Seine ou par une remontée de nappe ou le refoulement des réseaux\nd’assainissement.\nIl s’agira ensuite d’évaluer la vulnérabilité, bâtiment par bâtiment :",
+      "Etude de la vulnérabilité\nAu risque d’inondation CCTP 20/03/2011\n- de mettre à jour le plan de niveau de la crue de 1910 réalisée lors de l’étude de 2002\n- de réaliser un plan de niveau des eaux de crue cinquantennale pour les sites du jardin\ndes plantes et de l’ilot Buffon-Poliveau\n- d’évaluer le risque que les fournisseurs d’énergie du MNHN (électricité, chaleur\nurbaine, gaz, eau, etc.) ne soient plus en mesure de produire ou d’acheminer ces\nfluides.\n- d’évaluer le risque que l’approvisionnement en fluides cryogéniques (azote liquide et\nhélium liquide) soit interrompu.\nDans un second temps, l’entreprise procédera à l’étude à proprement parler de la vulnérabilité\ndes deux sites. Pour cela, en plus du débordement de la Seine, les refoulements des réseaux\nd’assainissement et la remontée de nappes d’eau devront être pris en compte. L’étude devra\névaluer la vulnérabilité de l’ensemble des éléments de chaque site :\n- les réseaux d’énergie (électricité, gaz, chaleur urbaine),\n- les réseaux d’eau (potable ou non),\n- les bâtiments,\n- les produits présentant un risque pour l’environnement (produits chimiques,\nbiologiques, radioactifs, etc.)\n- les équipements de laboratoire,\n- les collections, aussi bien les collections vivantes de la ménagerie que les collections\nmuséales/scientifiques/patrimoniales\nPour chaque élément identifié comme étant vulnérable, il sera évalué le risque encouru par\ncet élément vis-à-vis d’une crue. L’évaluation pourra se faire selon la matrice de criticité"
+    ],
+    "sources": [
+      {
+        "document": "cctp3.pdf",
+        "page": 3,
+        "parent_id": "parent_283"
+      },
+      {
+        "document": "cctp3.pdf",
+        "page": 4,
+        "parent_id": "parent_286"
+      },
+      {
+        "document": "cctp3.pdf",
+        "page": 6,
+        "parent_id": "parent_289"
+      },
+      {
+        "document": "cctp3.pdf",
+        "page": 5,
+        "parent_id": "parent_287"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 24.537
+  },
+  "17": {
+    "id": "17",
+    "question": "Quelles sont les deux types de crues étudiées pour évaluer la vulnérabilité des sites ?",
+    "reference_answer": "L'étude porte sur la crue cinquantennale et la crue centennale.",
+    "expected_document": "cctp3.pdf",
+    "expected_pages": "1",
+    "answerable": "oui",
+    "category": "information_directe",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:19:48.922602+00:00",
+    "response": " Les deux types de crues étudiées pour évaluer la vulnérabilité des sites sont :\n\n1. Une crue cinquantennale [SOURCE 2 — DOCUMENT cctp3.pdf — PAGE 4 — parent_286]\n2. Une crue centennale [SOURCE 2 — DOCUMENT cctp3.pdf — PAGE 4 — parent_286]\n\n[SOURCE 3 — DOCUMENT cctp3.pdf — PAGE 3 — parent_283] et [SOURCE 4 — DOCUMENT cctp3.pdf — PAGE 5 — parent_287] confirment cette information.",
+    "retrieved_contexts": [
+      "Etude de la vulnérabilité\nAu risque d’inondation CCTP 20/03/2011\nAnalyse des réseaux\nIl s’agira d’identifier les réseaux et portions de réseaux qui présentent une vulnérabilité face à\nl’inondation, et d’évaluer cette vulnérabilité :\n- Réseaux « informatiques » (référent : Direction des Systèmes d’Information)\n• Etude de la vulnérabilité des câbles de courant faible : téléphonie,\nvidéosurveillance, GTB, SSI\n• Etude de la vulnérabilité de l’Autocom et des serveurs\n- Réseau CPCU (référent : Direction de la Rénovation et de la Maintenance)\n• Etude de la vulnérabilité des conduites\n• Etude de la vulnérabilité des sous-stations\n- Réseau électrique (référent : DRM)\n• Etude de la vulnérabilité des postes haute tension\n• Etude de la vulnérabilité des groupes électrogènes\n- Réseau de gaz (référent : DRM)\n• Etude de la vulnérabilité des conduites\n- Réseau d’eau potable (référent : DRM)\n• Etude de la vulnérabilité des conduites\n- Réseau d’eau non potable (référent : DRM)\n• Etude de la vulnérabilité des conduites\n• Etude de la vulnérabilité des surpresseurs\nIl sera pris en compte la possibilité d’une panne électrique dans l’évaluation de la\nvulnérabilité des équipements nécessitant une alimentation.\nAnalyse des bâtiments\nIl s’agira d’identifier les locaux étant susceptibles d’être inondés, que ce soit directement par\nle débordement de la Seine ou par une remontée de nappe ou le refoulement des réseaux\nd’assainissement.\nIl s’agira ensuite d’évaluer la vulnérabilité, bâtiment par bâtiment :",
+      "sous stations\n- un plan du réseau de gaz de chaque site\n- un plan du réseau d’assainissement de chaque site\n- le plan de zonage du PPRI de Paris sur les deux sites\n- le plan de niveau de la crue de 1910 sur les deux sites\n- le plan des carrières présentes sous le Jardin des Plantes\n- données hydrogéologiques sur les mouvements d’eau sous le Jardin des Plantes\n- les plans de l’ensemble des bâtiments des deux sites\n- la liste des ICPE\n- recensement des locaux contenant des produits dangereux\n- l’étude de vulnérabilité réalisée en 2002\n- liste des opérations SPSI\n2. Contenu de la mission\nDans ce qui suit, toute analyse de risque ou de vulnérabilité sera réalisée systématiquement\ndeux fois : dans le cas d’une crue cinquantennale et dans le cas d’une crue centennale. De\nmême pour les synthèses qui seront réalisées pour chacun des deux cas.\nDans un premier temps, la mission de l’entreprise sera :\n2",
+      "Etude de la vulnérabilité\nAu risque d’inondation CCTP 20/03/2011\n1. Présentation générale\n1. Contexte de la consultation\nLe Muséum National d’Histoire Naturelle, en tant qu’établissement culturel1 touché par le\nPlan de Prévention des Risques d’Inondation (PPRI) de Paris, a le devoir d’établir un plan de\nprotection contre les inondations, et souhaite à cet effet effectuer une analyse détaillée de sa\nvulnérabilité face aux inondations.\n2. Objet de la consultation\nLe présent marché est un marché de prestations intellectuelles dont l’objet est la réalisation\nd’un diagnostic de vulnérabilité aux risques d’inondation de deux sites parisiens voisins du\nMuséum National d’Histoire Naturelle : le Jardin des Plantes et l’îlot Buffon-Poliveau. La\nvulnérabilité des sites sera étudiée dans le cas d’une crue cinquantennale et dans le cas d’une\ncrue centennale.\n3. Définition de la mission\nLa mission se déroulera en trois étapes :\n1ère étape : recueil de données et analyse des sites, notamment à travers l’échange avec les\ndifférents référents désignés par le MNHN\n2ème étape : préconisations d’actions et travaux, chiffrages de ces préconisations, chiffrages\ndes dégâts potentiels si les préconisations ne sont pas respectées et intégration des\npréconisations au Schéma Pluriannuel de Stratégie Immobilière du MNHN (voir §1.5).\n3ème étape : mission d’assistance à maîtrise d’ouvrage : assistance sur le choix des moyens\ninternes et externes à mettre en œuvre\n4. Les référents MNHN",
+      "Etude de la vulnérabilité\nAu risque d’inondation CCTP 20/03/2011\n- de mettre à jour le plan de niveau de la crue de 1910 réalisée lors de l’étude de 2002\n- de réaliser un plan de niveau des eaux de crue cinquantennale pour les sites du jardin\ndes plantes et de l’ilot Buffon-Poliveau\n- d’évaluer le risque que les fournisseurs d’énergie du MNHN (électricité, chaleur\nurbaine, gaz, eau, etc.) ne soient plus en mesure de produire ou d’acheminer ces\nfluides.\n- d’évaluer le risque que l’approvisionnement en fluides cryogéniques (azote liquide et\nhélium liquide) soit interrompu.\nDans un second temps, l’entreprise procédera à l’étude à proprement parler de la vulnérabilité\ndes deux sites. Pour cela, en plus du débordement de la Seine, les refoulements des réseaux\nd’assainissement et la remontée de nappes d’eau devront être pris en compte. L’étude devra\névaluer la vulnérabilité de l’ensemble des éléments de chaque site :\n- les réseaux d’énergie (électricité, gaz, chaleur urbaine),\n- les réseaux d’eau (potable ou non),\n- les bâtiments,\n- les produits présentant un risque pour l’environnement (produits chimiques,\nbiologiques, radioactifs, etc.)\n- les équipements de laboratoire,\n- les collections, aussi bien les collections vivantes de la ménagerie que les collections\nmuséales/scientifiques/patrimoniales\nPour chaque élément identifié comme étant vulnérable, il sera évalué le risque encouru par\ncet élément vis-à-vis d’une crue. L’évaluation pourra se faire selon la matrice de criticité"
+    ],
+    "sources": [
+      {
+        "document": "cctp3.pdf",
+        "page": 6,
+        "parent_id": "parent_289"
+      },
+      {
+        "document": "cctp3.pdf",
+        "page": 4,
+        "parent_id": "parent_286"
+      },
+      {
+        "document": "cctp3.pdf",
+        "page": 3,
+        "parent_id": "parent_283"
+      },
+      {
+        "document": "cctp3.pdf",
+        "page": 5,
+        "parent_id": "parent_287"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 30.557
+  },
+  "18": {
+    "id": "18",
+    "question": "Que signifie l'acronyme SPSI dans le contexte du Muséum ?",
+    "reference_answer": "SPSI signifie Schéma Pluriannuel de Stratégie Immobilière.",
+    "expected_document": "cctp3.pdf",
+    "expected_pages": "1",
+    "answerable": "oui",
+    "category": "information_directe",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:20:19.483748+00:00",
+    "response": " Dans le contexte du Muséum, l'acronyme SPSI signifie \"Schéma Pluriannuel de Stratégie Immobilière\". [SOURCE 1 — DOCUMENT cctp3.pdf — PAGE 4 — parent_285]",
+    "retrieved_contexts": [
+      "Etude de la vulnérabilité\nAu risque d’inondation CCTP 20/03/2011\nimmobilière, le Muséum a lancé en 2010 un diagnostic permettant de dresser un SPSI (Schéma\nPluriannuel de Stratégie Immobilière).\nLes SPSI ont un double objectif :\n- améliorer la connaissance des biens immobiliers des opérateurs, afin d'en réaliser l'entretien\ncourant,\n- avoir une vision stratégique sur la durée de ses contraintes, de ses potentialités et de son\nadéquation aux fonctionnalités et à l'usage afin d'inscrire les opérateurs dans une démarche\nstratégique quinquennale permettant d'accroitre leur performance immobilière.\nLe SPSI du Muséum se substitue ainsi au « Schéma Directeur de Rénovation du Patrimoine\nImmobilier », qui constituait depuis plusieurs années l’un des outils nécessaires à l’exercice des\nmissions de la Direction de la Rénovation et de la Maintenance.\n2. 1ère étape\n1. Plans et documents remis\nLa Direction de la Rénovation du Muséum s’engage à fournir au titulaire:\n- un plan du réseau d’eau potable et non potable de chaque site\n- un plan du réseau électrique de chaque site comportant l’emplacement des différents\npostes haute tension ainsi que leur principe de raccordement sur les artères du réseau\nErDF\n- un plan du réseau de chauffage urbain de chaque site comportant l’emplacement des\nsous stations\n- un plan du réseau de gaz de chaque site\n- un plan du réseau d’assainissement de chaque site\n- le plan de zonage du PPRI de Paris sur les deux sites",
+      "sous stations\n- un plan du réseau de gaz de chaque site\n- un plan du réseau d’assainissement de chaque site\n- le plan de zonage du PPRI de Paris sur les deux sites\n- le plan de niveau de la crue de 1910 sur les deux sites\n- le plan des carrières présentes sous le Jardin des Plantes\n- données hydrogéologiques sur les mouvements d’eau sous le Jardin des Plantes\n- les plans de l’ensemble des bâtiments des deux sites\n- la liste des ICPE\n- recensement des locaux contenant des produits dangereux\n- l’étude de vulnérabilité réalisée en 2002\n- liste des opérations SPSI\n2. Contenu de la mission\nDans ce qui suit, toute analyse de risque ou de vulnérabilité sera réalisée systématiquement\ndeux fois : dans le cas d’une crue cinquantennale et dans le cas d’une crue centennale. De\nmême pour les synthèses qui seront réalisées pour chacun des deux cas.\nDans un premier temps, la mission de l’entreprise sera :\n2",
+      "Etude de la vulnérabilité\nAu risque d’inondation CCTP 20/03/2011\n1. Présentation générale\n1. Contexte de la consultation\nLe Muséum National d’Histoire Naturelle, en tant qu’établissement culturel1 touché par le\nPlan de Prévention des Risques d’Inondation (PPRI) de Paris, a le devoir d’établir un plan de\nprotection contre les inondations, et souhaite à cet effet effectuer une analyse détaillée de sa\nvulnérabilité face aux inondations.\n2. Objet de la consultation\nLe présent marché est un marché de prestations intellectuelles dont l’objet est la réalisation\nd’un diagnostic de vulnérabilité aux risques d’inondation de deux sites parisiens voisins du\nMuséum National d’Histoire Naturelle : le Jardin des Plantes et l’îlot Buffon-Poliveau. La\nvulnérabilité des sites sera étudiée dans le cas d’une crue cinquantennale et dans le cas d’une\ncrue centennale.\n3. Définition de la mission\nLa mission se déroulera en trois étapes :\n1ère étape : recueil de données et analyse des sites, notamment à travers l’échange avec les\ndifférents référents désignés par le MNHN\n2ème étape : préconisations d’actions et travaux, chiffrages de ces préconisations, chiffrages\ndes dégâts potentiels si les préconisations ne sont pas respectées et intégration des\npréconisations au Schéma Pluriannuel de Stratégie Immobilière du MNHN (voir §1.5).\n3ème étape : mission d’assistance à maîtrise d’ouvrage : assistance sur le choix des moyens\ninternes et externes à mettre en œuvre\n4. Les référents MNHN",
+      "- collections muséales/scientifiques/patrimoniales\n- collections vivantes\nIl sera indiqué la répartition des coûts des préconisations selon chacune des catégories\nanalysées : réseau, bâtiment (structure et installations techniques uniquement), produits à\nrisque, équipements de laboratoire et collections.\nEnfin, les fiches de préconisations par bâtiment seront « intégrées » au Schéma Pluriannuel de\nStratégie Immobilière (SPSI) du MNHN. L’objectif de cette dernière étape est de permettre à\nla direction de la rénovation et de la maintenance d’intégrer les différentes préconisations à\nses chantiers en cours et à venir. Pour cela, lorsqu’un bâtiment est inscrit au SPSI, les mesures\npréconisées seront comparées aux travaux prévus dans le SPSI. Si ces mesures peuvent être\n6"
+    ],
+    "sources": [
+      {
+        "document": "cctp3.pdf",
+        "page": 4,
+        "parent_id": "parent_285"
+      },
+      {
+        "document": "cctp3.pdf",
+        "page": 4,
+        "parent_id": "parent_286"
+      },
+      {
+        "document": "cctp3.pdf",
+        "page": 3,
+        "parent_id": "parent_283"
+      },
+      {
+        "document": "cctp3.pdf",
+        "page": 8,
+        "parent_id": "parent_294"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 19.985
+  },
+  "19": {
+    "id": "19",
+    "question": "Quels fluides cryogéniques nécessitent une évaluation des risques d'approvisionnement ?",
+    "reference_answer": "Il s'agit de l'azote liquide et de l'hélium liquide.",
+    "expected_document": "cctp3.pdf",
+    "expected_pages": "3",
+    "answerable": "oui",
+    "category": "valeur_technique",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:20:39.474420+00:00",
+    "response": " Selon le document [cctp3.pdf, page 5], l'évaluation du risque d'approvisionnement en fluides cryogéniques est nécessaire pour les fluides suivants : azote liquide et hélium liquide.",
+    "retrieved_contexts": [
+      "Etude de la vulnérabilité\nAu risque d’inondation CCTP 20/03/2011\n- de mettre à jour le plan de niveau de la crue de 1910 réalisée lors de l’étude de 2002\n- de réaliser un plan de niveau des eaux de crue cinquantennale pour les sites du jardin\ndes plantes et de l’ilot Buffon-Poliveau\n- d’évaluer le risque que les fournisseurs d’énergie du MNHN (électricité, chaleur\nurbaine, gaz, eau, etc.) ne soient plus en mesure de produire ou d’acheminer ces\nfluides.\n- d’évaluer le risque que l’approvisionnement en fluides cryogéniques (azote liquide et\nhélium liquide) soit interrompu.\nDans un second temps, l’entreprise procédera à l’étude à proprement parler de la vulnérabilité\ndes deux sites. Pour cela, en plus du débordement de la Seine, les refoulements des réseaux\nd’assainissement et la remontée de nappes d’eau devront être pris en compte. L’étude devra\névaluer la vulnérabilité de l’ensemble des éléments de chaque site :\n- les réseaux d’énergie (électricité, gaz, chaleur urbaine),\n- les réseaux d’eau (potable ou non),\n- les bâtiments,\n- les produits présentant un risque pour l’environnement (produits chimiques,\nbiologiques, radioactifs, etc.)\n- les équipements de laboratoire,\n- les collections, aussi bien les collections vivantes de la ménagerie que les collections\nmuséales/scientifiques/patrimoniales\nPour chaque élément identifié comme étant vulnérable, il sera évalué le risque encouru par\ncet élément vis-à-vis d’une crue. L’évaluation pourra se faire selon la matrice de criticité",
+      "exemple le battage de tubes ouverts,\nnécessitent une surveillance constante notamment pour le passage à côt\n(cf. § 8.2.).\nConcernant les travaux en forage dirigé, leurs spécifications et techniques sont décrites dans le\nCCTP spécifique « Travaux de forage dirigé ».\n), et\n4\nles prescriptions\nanti endommagement.\nLes opérateurs des engins de fonçage et/ou de forage sont en possession du CACES concerné ou\néquivalent, en cours de validité.\nen classe A (cf. 11 du présent CCTP).\nRemarque DT-DICT\nséparées »\nes travaux pour une surface de\nterrassement inférieure à 100 m².\nRemblayage et compactage\nLes remblayages et compactages sous chaussée, sous trottoir, sous accotement ou sous espace\nvert sont réalisés conformément aux normes NF P 11-300, NF P 98-331, XP P 98-333 et au guide\ntechnique SETRA « Remblayage des tranchées et réfections des chaussées ». Le cas échéant, la\ncoupe-type est spécifiée par tronçon dans le DCE ou au Contrat.\nLes objectifs de densification sont spécifiés dans le catalogue des coupes types retenues par\nGÉRÉDIS à\ndu Mandataire.\nconserve les fiches techniques des matériaux et les fiches de suivi de chantier\ntechnique SETRA « Remblayage des tranchées et réfections\ndes chaussées » complétées par ses soins. Elles peuvent être demandées par le Mandataire en cas\nde contrôle ou de litige.\nPrestations hors tranchée et fouilles\n8.12.1 Plate-\nLes caractéristiques de construction et de réalisation sont données par GÉRÉDIS, par exemple dans",
+      "Etude de la vulnérabilité\nAu risque d’inondation CCTP 20/03/2011\nAnalyse des produits présentant un risque pour l’environnement\nIl s’agira d’identifier les éléments présentant un risque pour l’environnement qui, du fait\nd’une inondation, pourraient se répandre dans l’environnement ou réagir avec l’eau. Il sera\nnotamment pris en compte les conséquences d’une coupure d’électricité durable (arrêt de\nventilation par exemple). La vulnérabilité de ces éléments sera ensuite évaluée.\nLe référent pour cette analyse sera le Service Hygiène et Sécurité\nAnalyse des équipements de laboratoire\nIl s’agira d’identifier les éléments qui présentent une vulnérabilité au risque d’inondation et\nd’évaluer cette vulnérabilité. L’analyse prendra notamment en compte les contraintes liées à\ncertains équipements qui doivent être maintenus alimentés ou disposent de conditions d’arrêt\nspécifiques, tels que les spectromètres RMN ou la Nano-SIMS par exemple. De fait, il sera\nétudié les conséquences sur ces équipements d’une coupure d’énergie et/ou de difficultés\nd’approvisionnement en fluides cryogéniques.\nLe référent pour cette analyse sera la DIREV.\nAnalyse des collections\nIl s’agira d’identifier les éléments qui présentent une vulnérabilité au risque d’inondation et\nd’évaluer cette vulnérabilité. En complément, l’analyse prendra notamment en compte les\ncontraintes liées à certaines collections muséales qui demandent un contrôle en température et",
+      "établissement par une entreprise extérieure le Mandataire et chaque Entreprise Agréée assument\nmble des obligations mises à leur\ncharge par la réglementation.\nCette coordination générale des mesures de prévention ne porte pas sur les risques liés aux métiers\net aux activités qui sont propres à chacune des entreprises, utilisatrice et extérieures, et qui sont\n4121-1 et\nsuivants du Code du Travail.\nLa coordination en matière de sécurité et de protection de la santé est assumée par le Mandataire\nen qualité de « chef de\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 17/123"
+    ],
+    "sources": [
+      {
+        "document": "cctp3.pdf",
+        "page": 5,
+        "parent_id": "parent_287"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 47,
+        "parent_id": "parent_148"
+      },
+      {
+        "document": "cctp3.pdf",
+        "page": 7,
+        "parent_id": "parent_291"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 17,
+        "parent_id": "parent_97"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 20.922
+  },
+  "20": {
+    "id": "20",
+    "question": "Quels sont les trois niveaux de dégâts définis dans la matrice de criticité ?",
+    "reference_answer": "Les trois niveaux sont Dégâts faibles, Dégâts moyens et Dégâts forts.",
+    "expected_document": "cctp3.pdf",
+    "expected_pages": "3",
+    "answerable": "oui",
+    "category": "synthese",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:21:00.402766+00:00",
+    "response": " Les trois niveaux de dégâts définis dans la matrice de criticité sont :\n\n1. Dégâts faibles\n2. Dégâts moyens\n3. Dégâts forts\n\n[source 1.pdf, page 5]",
+    "retrieved_contexts": [
+      "cet élément vis-à-vis d’une crue. L’évaluation pourra se faire selon la matrice de criticité\nsuivante, ou selon toute autre méthode que l’entreprise jugera plus judicieuse, sous réserve\nd’acceptation par le MNHN :\nDégâts faibles Dégâts moyens Dégâts forts\nProbabilité1 faible Acceptable Indésirable Indésirable\nProbabilité moyenne Indésirable Indésirable Inacceptable\nProbabilité forte Indésirable Inacceptable Inacceptable\n1probabilité d’occurrence d’un aléa donné pouvant menacer l’élément considéré.\nL’ensemble de l’analyse se fera en s’appuyant sur une étude de terrain et sur une étude\ndocumentaire recoupées avec les informations fournies par les référents du MNHN.\n3",
+      "Etude de la vulnérabilité\nAu risque d’inondation CCTP 20/03/2011\n- de mettre à jour le plan de niveau de la crue de 1910 réalisée lors de l’étude de 2002\n- de réaliser un plan de niveau des eaux de crue cinquantennale pour les sites du jardin\ndes plantes et de l’ilot Buffon-Poliveau\n- d’évaluer le risque que les fournisseurs d’énergie du MNHN (électricité, chaleur\nurbaine, gaz, eau, etc.) ne soient plus en mesure de produire ou d’acheminer ces\nfluides.\n- d’évaluer le risque que l’approvisionnement en fluides cryogéniques (azote liquide et\nhélium liquide) soit interrompu.\nDans un second temps, l’entreprise procédera à l’étude à proprement parler de la vulnérabilité\ndes deux sites. Pour cela, en plus du débordement de la Seine, les refoulements des réseaux\nd’assainissement et la remontée de nappes d’eau devront être pris en compte. L’étude devra\névaluer la vulnérabilité de l’ensemble des éléments de chaque site :\n- les réseaux d’énergie (électricité, gaz, chaleur urbaine),\n- les réseaux d’eau (potable ou non),\n- les bâtiments,\n- les produits présentant un risque pour l’environnement (produits chimiques,\nbiologiques, radioactifs, etc.)\n- les équipements de laboratoire,\n- les collections, aussi bien les collections vivantes de la ménagerie que les collections\nmuséales/scientifiques/patrimoniales\nPour chaque élément identifié comme étant vulnérable, il sera évalué le risque encouru par\ncet élément vis-à-vis d’une crue. L’évaluation pourra se faire selon la matrice de criticité",
+      "O :\n être présente à la revue contradictoire de fin de chantier organisée par le Mandataire ;\n\nit sans y être autorisé par le Mandataire\n\nModalités de réception des ouvrages Mandataire :\n Cas 1 : Si les Ouvrages Mandataire sont jugés conformes par le Mandant, et que les Essais\nGÉRÉDIS sont concluants, ce dernier prononce la réception, dans un délai de maximum de\n15 jours à compter de la réception.\n Cas 2 : Si les Ouvrages Mandataire présentent des non-conformités, défauts, malfaçons,\nque les Essais\nGÉRÉDIS sont concluants, GÉRÉDIS prononce la réception avec réserves. Le Mandataire se\n-ci procèdent aux travaux nécessaires à la levée des\nEntreprise(s) Agréée(s) permettent la levée des réserves, le Mandataire le Notifie au\nMandant et lui remet une attestation de conformité ainsi\nMandant est seul habilité à décider de la levée des réserves et de la levée de la retenue de\ngarantie.\n Cas 3 : Si les Ouvrages Mandataires présentent des non conformités significatives, le\nMandant est en droit de refuser la réception. Ce refus doit être motivé par le Mandant et\nconcernée(s). En pareil cas, le Mandataire doit prendre toutes les mesures appropriées pour\nconformité, le Mandataire le Notifie au Mandant et lui remet une attestation de conformité\nier permettant au Mandant de contrôler que les rectifications apportées\ncas 1, 2, ou 3 identifiés dans le présent Article.\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 95/123",
+      "8 Prestations de travaux de génie civil\nDescription technique des prestations\n:\n les notices constructeurs/fournisseurs ;\n les documents, guides et normes techniques ;\nLes prestations sont réalisées conformément aux normes et guides en vigueur. Elles consistent\nessentiellement à réaliser la partie génie civil iques définis dans\nle chapitre 10 :\n le terrassement ponctuel de positionnement et de localisation ;\n le terrassement pour les ouvrages souterrains et aéro-souterrains ;\n ctriques y/c postes haut de poteau ;\n ;\n le génie civil de poste HTA/BT ;\n la pose de caniveaux, de chambres de jonction ou de tirage ;\n électriques ;\n le percement de toute nature (ouvrages sur façade, colonnes électriques, etc.) ;\n la démolition, dépose et déblaiement (y/c des supports) ;\n le géoréférencement en classe A des ouvrages construits (cf. § 12 du présent CCTP) ;\n et, toute autre su\niques définis dans\nle chapitre 10\nmodification ou démolition, elles sont réalisées dans un environnement sécurisé hors tension. Elles\nconsistent en :\n r les lignes aériennes (y/c\nfaçade) ;\n -souterrain ;\n la pose de transformateurs HTA/BT ;\n\ncoupure ;\n le déroulage de câbles électriques, de conducteurs de mise à la terre, de câblettes de\ncommunication et leur repérage ;\n la pose de fourreaux, de tubes PE et de tubes Acier ;\n ;\n ise à la terre, avifaune, etc.) ;\n ;\n\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 35/123"
+    ],
+    "sources": [
+      {
+        "document": "cctp3.pdf",
+        "page": 5,
+        "parent_id": "parent_288"
+      },
+      {
+        "document": "cctp3.pdf",
+        "page": 5,
+        "parent_id": "parent_287"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 95,
+        "parent_id": "parent_230"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 35,
+        "parent_id": "parent_125"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 22.107
+  },
+  "21": {
+    "id": "21",
+    "question": "Quelle est l'adresse exacte du fournisseur des profilés métalliques de la charpente ?",
+    "reference_answer": "",
+    "expected_document": "",
+    "expected_pages": "",
+    "answerable": "non",
+    "category": "question_absente",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:21:22.539632+00:00",
+    "response": " Je ne sais pas à partir des extraits fournis.",
+    "retrieved_contexts": [
+      "CCISM – ESPACE NUMERIQUE- CCTP Lot 1\n• fourniture de l'ensemble des profils, tubes, fers, pièces spéciales,\nentretoises, platines, goussets, renforts, boulons, fixations et accessoires\ndivers nécessaires à l'exécution des ouvrages,\n• mise en œuvre de l'ensemble des ouvrages, compris assemblages de\ntoute nature et toutes sujétions de transport, manutention, levage,\nprotections, étaiements, échafaudages, etc., nécessaires au parfait\naccomplissement des travaux,\n• sujétions diverses pour liaisons avec les ouvrages béton de l'existant.\n• y compris toutes sujétions de finitions.\n3.2 STRUCTURE METALLIQUE DE L’ENVELOPPE\nAfin de supporter le plancher de la mezzanine, l'entreprise devra la réalisation de\nla structure métallique porteuse, en acier galvanisé à chaud.\nFabrication, pose et scellements des ouvrages de charpente métallique sur le\ndallage et les murs existants, comprenant :\n• Approvisionnement des profilés (portiques, poteaux, poutres, etc.),\nsuivant études et plans de structure :\no poteaux en profilés type HEA, HEB, IPE ou équivalent recevant en\npied des platines en tôle forte, \u0000\no poutres porteuses en profilé type IPN ou IPE de section appropriée\nà la surcharge totale à prendre en compte (250 kg/m2), assemblées\nsur les poteaux par des platines et goussets de report de charges,\no poutres de contreventement éventuelles en profilés dito\nassemblées sur les poutres et poteaux décrits ci-avant,\no y compris toutes ossatures complémentaires, entraxe suivant plans",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 21/40\n7 OBJECTIFS DE TRAVAUX\n7.1 Etat de lieux et objectifs\nLocal Sujet Nature Classement Requis\nLocal IBC Structure Charpente métallique R0 R120\nMurs Parpaings EI120* EI120\nToiture Toiture et éléments supports A1 A1\nRevêtement de toiture Droof (t3) Broof (t3)\nLocal Structure Charpente métallique R0 R120\nSolvants\nMurs Parpaings EI120* EI120\nBardage EI0 EI120\nToiture Revêtement de toiture Droof (t3) Broof (t3)\nToiture et éléments supports A1 A1\nLocal Structure Charpente métallique R0 R120\nEtuves\nMurs Parpaings EI120* EI120\nToiture Revêtement de toiture Droof (t3) Broof (t3)\nToiture et éléments supports A1 A1\nDésenfumage / / Exutoire\nEntrepôts Structure Charpente métallique R0 R120\nMP & PF\nMurs Parpaings EI120* EI120\n* : sous réserve de traitement des traversants, des fissures et des inclusions d'éléments de\ncharpente.",
+      "des ouvrages exécutés.\nLes documents et textes applicables dans le cadre de ce marché sont les suivants :\n- Les lois, règlements, décrets, arrêtés, circulaires français applicables à la date d’exécution\ndes travaux et notamment :\no L’arrêté du 22 mars 2004 relatif à la résistance au feu des produits des éléments\nde construction et ouvrages,\no L’arrêté du 14 février 2003 relatif à la performance des toitures et couvertures\nde toitures exposées à un incendie extérieur,\no L’arrêté du 21 novembre 2002 relatif à la réaction au feu des produits de\nconstruction et d’aménagement,\n- Le guide CTICM SRI-17/245-CR/NB - Guide de vérification du comportement au feu des\nbâtiments à simple rez-de-chaussée en charpente métallique,\n- Le guide AFILOG d’application de l’arrêté ministériel du 11 avril 2017,\n- L’instruction technique IT246 relative au désenfumage dans les ERP,\n- Le présent cahier des charges,\n- Le document administratif relatif aux conditions de remise des offres,\n8.2 Documents à la disposition de l’Entreprise\nVoir Liste des documents",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 26/40\n8.6 Prise en compte du facteur de massivité des structures métalliques\nL’Entreprise prévoira l’encoffrement ou le recouvrement par enduit de tous les éléments de\nstructure métallique de la paroi. L’épaisseur de l’encoffrement doit être déterminé par le\nsoumissionnaire.\nL’épaisseur de protection rapportée sur les structures en profil métallique au voisinage des\néléments de séparation sera déterminée en considérant :\n- Une température critique de 500°C pour une durée d’exposition au feu identique au critère\ncoupe-feu de la paroi soit 120 minutes,\n- Le facteur de massiveté donné dans les tableaux 1 et 2 en fonction de la configuration de\nla paroi coupe-feu : paroi CF perpendiculaire au sens porteur de la structure, paroi CF\nparallèle au sens porteur de la structure. Le relevé des charpentes est à la charge de\nl’Entreprise\nTableau 1 : Facteur de massiveté d’un poteau métallique protégé au voisinage d’une paroi\nCF perpendiculaire au sens porteur de la structure"
+    ],
+    "sources": [
+      {
+        "document": "cctp_lot_1.pdf",
+        "page": 8,
+        "parent_id": "parent_307"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 21,
+        "parent_id": "parent_40"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 23,
+        "parent_id": "parent_43"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 26,
+        "parent_id": "parent_47"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 12.852
+  },
+  "22": {
+    "id": "22",
+    "question": "Quel est le montant des pénalités financières journalières en cas de retard de livraison du chantier DEN BRAVEN ?",
+    "reference_answer": "",
+    "expected_document": "",
+    "expected_pages": "",
+    "answerable": "non",
+    "category": "question_absente",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:21:35.404838+00:00",
+    "response": " Je ne sais pas à partir des extraits fournis. Il n'y a pas d'information sur les pénalités financières journalières en cas de retard de livraison du chantier DEN BRAVEN dans les documents fournis. [SOURCE 1 — DOCUMENT 19082-COMP-CCTP-001.pdf — PAGE 12, 14], [SOURCE 2 — DOCUMENT cctp2.pdf — PAGE 13], [SOURCE 3 — DOCUMENT 19082-COMP-CCTP-001.pdf — PAGE 14], [SOURCE 4 — DOCUMENT 19082-COMP-CCTP-001.pdf — PAGE 11].",
+    "retrieved_contexts": [
+      "- Le chantier (y compris aires de stockage) devra être constamment tenu en état de\npropreté (nettoyage quotidien du chantier et nettoyage hebdomadaire soigné). Il sera\nlaissé parfaitement net avant l'intervention du corps d'état suivant et après la fin des\ntravaux. Dans le cas où ce nettoyage ne serait pas satisfaisant, DEN BRAVEN se réserve\nle droit de faire réaliser ce nettoyage par l’entreprise elle-même sans qu’elle puisse nous\nimputer des pénalités ou des retards.\nUn interlocuteur unique sera désigné par l’Entreprise pour la coordination avec DEN\nBRAVEN pendant toute la durée du chantier.\nL’Entreprise remettra avec son offre un organigramme (chef de chantier, chef d’équipe,\nmonteurs, etc.) en précisant les moyens mis en œuvre pour mener à bien le projet.\nUn chef de chantier sera présent en permanence sur le site et il sera l’interlocuteur privilégié\nde DEN BRAVEN. Il assistera aux réunions hebdomadaires et disposera des pouvoirs\nnécessaires afin de ne pas retarder le déroulement du chantier.\n5.1.1 Base vie\nLes baraquements de chantier seront localisés sur une zone définie par le Maître d’Ouvrage.\nLe personnel féminin aura à sa disposition des vestiaires et sanitaire dans les locaux du Maître\nd’Ouvrage.\n5.1.2 Electricité\nDEN BRAVEN mettra à la disposition de l’Entreprise un coffret de chantier dans la zone de\ntravail à côté de la base vie. A l’Entreprise de prévoir les rallonges si nécessaire.",
+      "matière de coordination de sécurité, et plus précisément celle concernant le protocole de sécurité\nde chargement et déchargement avec le transporteur.\n4.6.2 Approvisionnement des matériels\ndoit être du matériel validé par GÉRÉDIS.\nNota : les matériels mis en uvre ne doivent comporter aucune mention ou logotype se rapportant\nà des activités étrangères aux missions de GÉRÉDIS Gestionnaire de réseaux de distribution\n4.6.3 Retour de matériels\nAgréée informera le Mandataire, dès la fin de chantier, de la liste du matériel inutilisé\net leur quantité et éventuellement les numéros des tourets consignés à retourner.\nSauf dispositions convenues, les câbles restant sur tourets seront capotés et ligaturés aux\nextrémités et fixés sur une joue ou mis en couronne avant restitution au Mandataire.\nne peut pas utiliser les bennes à déchets de GÉRÉDIS pour déposer ses résidus\net déchets de chantier.\nDispositions relatives au management de la qualité\nLa démarche de détection et de traitement des non-\nsuivantes :\n\ndes acteurs concernés ;\n identifier les causes de la non-conformité, en évaluer les effets\nreproduise ;\n ;\n la clôture et\nLes modalités de levée de la non-\n« Spécificités particulières ».\nIndemnités et pénalités\nLes dispositions générales et particulières relatives aux pénalités de retard ou pénalités techniques\nsont précisées dans le Contrat.\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 13/123",
+      "est le cas, elle précisera le nom de la société sous-traitante ainsi que la/les prestation(s) sous-\ntraitée(s). DEN BRAVEN se réserve le droit de refuser le sous-traitant si ce dernier ne satisfait\npas aux exigences de sécurité et de qualité.\nDEN BRAVEN n’acceptera pas la sous-traitance de deuxième niveau.\nDEN BRAVEN n’accepte pas un taux d’intérimaire supérieur à 25%.\nL’Entreprise consultée s’engage sur l’honneur à certifier que le travail sera réalisé avec des\nsalariés employés de façon régulière conformément aux articles L-143-3, L-143-5 et L-620.3\ndu Code du Travail.\nDans le cas où des intervenants non francophones seraient sur site l’Entreprise s’assurera de\nla présence au minimum d’un interprète et de 1 par tranche de 10 personnes.\nTous les sous-traitants respecteront les prescriptions générales HSE stipulées au paragraphe\n4.",
+      "consignes de Den Braven, pourrait se voir interdire l’accès au site sans aucun\ndédommagement autre que le paiement des heures réalisées et du matériel fourni à Den\nBraven.\nTout retard lié à ces évènements ne saurait être imputé à Den Braven."
+    ],
+    "sources": [
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 12,
+        "parent_id": "parent_23"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 13,
+        "parent_id": "parent_89"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 14,
+        "parent_id": "parent_28"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 11,
+        "parent_id": "parent_21"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 25.448
+  },
+  "23": {
+    "id": "23",
+    "question": "Quel est le budget total alloué par GÉRÉDIS pour les travaux de raccordement électrique ?",
+    "reference_answer": "",
+    "expected_document": "",
+    "expected_pages": "",
+    "answerable": "non",
+    "category": "question_absente",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:22:00.861956+00:00",
+    "response": " Je ne sais pas à partir des extraits fournis.",
+    "retrieved_contexts": [
+      "renouvellement de la colonne électrique concernée.\nEn cas de non accès à un logement pour des travaux de renouvellement avec des occupants :\n\n;\n\n> 10 m, le kit de raccordement provisoire est apposé près du distributeur ;\n\nboucle terminé par un kit de raccordement aérien\nisolante. Cette situation fait suite à un non accès malgré a minima 2 relances écrites\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 63/123",
+      "réglementation et se\nconforme aux prescriptions du coordonnateur SPS en transmettant notamment son Plan\nParticulier de Sécurité et de Protection de la Santé (PPSPS).\nRéglement\n5.3.1 Outillage et équipements de travail\nelle utilise fait partie des outillages appropriés et\nLe Code du Travail impose à tout chef d'établissement que les installations, engins et équipements\nmaintenus en parfait état de fonctionnement et de conformité, afin de prévenir et garantir la\nsécurité de ses salariés.\nassure donc sous sa responsabilité les Vérifications Générales Périodiques\n(VGP) et les contrôles ponctuels réglementaires, et tient à disposition du Mandataire leur traçabilité.\n5.3.2 Métrologie\nLes appareils de mesure doivent faire\n:\n les multimètres ;\n les détecteurs de tension ;\n les telluromètres ;\n les mégohmmètres ;\n les dynamomètres et clés dynamométriques ;\n les app\nnécessaires à la cotation ;\n etc.\nréalisés (révisions et étalonnages selon les instructions des fournisseurs des appareils de mesure).\nRéglementation liée aux ouvrages électriques GÉRÉDIS\nces risques (par exemple, en nommant un surveillant de travaux habilité au sens de la norme NF C\n18-510).\n5.4.1\nAgréée doit :\n avoir suivi au préalable une formation spécifique, ainsi que les recyclages prévus par les\ntextes en vigueur et devront avoir subi avec succès les épreuves éventuellement exigées.\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 20/123",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 14/40\no Longueur de la flèche,\no Représentation du fléchage de la grue,\no Poids de la charge maxi autorisée (à 75%),\no Poids de la charge à lever,\no Conditions opératoires limites suivant la situation météorologique.\n- Le schéma de l’itinéraire des convois de charges et des grues à l’intérieur de l’usine,\n- La description détaillée de l’opération de levage comprenant :\no L’emplacement précis des grues,\no Le mode d’élingage,\no La séquence détaillée des opérations,\nEn cas de levage à l’aide de plus d’un engin, l’Entreprise spécifiera les variations de charges\nattendues pendant les opérations.\nSur ce plan doit figurer l’environnement total pour définir les risques encourus (nappes de\ntuyauterie, équipements figurés, ouvrage de génie civil). L’analyse des équipements en\nopération et les produits en circulation dans les lignes et capacités de la zone de levage\npar DEN BRAVEN.\n5.1.8 Livraison\nLes horaires de livraisons pour le matériel et les matériaux seront :\nDe 8h00 à 16h45 – Du Lundi au Vendredi sauf jours fériés.\nLes livraisons doivent être réceptionné par le représentant de l’Entreprise.\nAucune livraison ne sera réceptionnée par le personnel de DEN BRAVEN FRANCE\n5.2 Sous-traitance\nL’Entreprise précisera dans son offre si elle envisage d’avoir recours à la sous-traitance. Si tel\nest le cas, elle précisera le nom de la société sous-traitante ainsi que la/les prestation(s) sous-",
+      "Tout nouvel ouvrage posé devra être capoté et repéré aux extrémités pour permettre de faciliter\ndes\ntravaux électriques (cf. § 10 du présent CCTP).\nForages et fonçages\n-traitant réalisant des travaux sans tranchée, en fonçage ou en\nforage (hors forage dirigé), a passé avec succès les PQF Génie Civil Electricité (GCE) et/ou\nTerrassement Ponctuel Electricité (TPE).\nL :\n pour le fonçage : le fonceur pneumatique ou « fusée » qui se déplace de façon indépendante\ndans le sol en compactant le terrain de part et d'autre. Cette technique non dirigeable est\nfacilement déviée par des obstacles ou des anciennes tranchées. Son utilisation doit être\nréservée à des traversées de faible\nLa mise en place du fourreau peut se faire directement derrière l'outil ou par traction ;\n pour le forage :\ne de forage rotative. Un marteau fond de trou assurant une percussion\npeut compléter le dispositif de forage. Les déblais sont refoulés par la tarière, et les\nfourreaux sont mis en place lors du forage.\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 46/123"
+    ],
+    "sources": [
+      {
+        "document": "cctp2.pdf",
+        "page": 63,
+        "parent_id": "parent_173"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 20,
+        "parent_id": "parent_102"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 14,
+        "parent_id": "parent_27"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 46,
+        "parent_id": "parent_147"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 15.525
+  },
+  "24": {
+    "id": "24",
+    "question": "Qui est le directeur actuel du Muséum National d'Histoire Naturelle ?",
+    "reference_answer": "",
+    "expected_document": "",
+    "expected_pages": "",
+    "answerable": "non",
+    "category": "question_absente",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:22:16.393462+00:00",
+    "response": " Je ne sais pas à partir des extraits fournis.",
+    "retrieved_contexts": [
+      "Etude de la vulnérabilité\nAu risque d’inondation CCTP 20/03/2011\n1. Présentation générale\n1. Contexte de la consultation\nLe Muséum National d’Histoire Naturelle, en tant qu’établissement culturel1 touché par le\nPlan de Prévention des Risques d’Inondation (PPRI) de Paris, a le devoir d’établir un plan de\nprotection contre les inondations, et souhaite à cet effet effectuer une analyse détaillée de sa\nvulnérabilité face aux inondations.\n2. Objet de la consultation\nLe présent marché est un marché de prestations intellectuelles dont l’objet est la réalisation\nd’un diagnostic de vulnérabilité aux risques d’inondation de deux sites parisiens voisins du\nMuséum National d’Histoire Naturelle : le Jardin des Plantes et l’îlot Buffon-Poliveau. La\nvulnérabilité des sites sera étudiée dans le cas d’une crue cinquantennale et dans le cas d’une\ncrue centennale.\n3. Définition de la mission\nLa mission se déroulera en trois étapes :\n1ère étape : recueil de données et analyse des sites, notamment à travers l’échange avec les\ndifférents référents désignés par le MNHN\n2ème étape : préconisations d’actions et travaux, chiffrages de ces préconisations, chiffrages\ndes dégâts potentiels si les préconisations ne sont pas respectées et intégration des\npréconisations au Schéma Pluriannuel de Stratégie Immobilière du MNHN (voir §1.5).\n3ème étape : mission d’assistance à maîtrise d’ouvrage : assistance sur le choix des moyens\ninternes et externes à mettre en œuvre\n4. Les référents MNHN",
+      "Etude de la vulnérabilité\nAu risque d’inondation CCTP 20/03/2011\nimmobilière, le Muséum a lancé en 2010 un diagnostic permettant de dresser un SPSI (Schéma\nPluriannuel de Stratégie Immobilière).\nLes SPSI ont un double objectif :\n- améliorer la connaissance des biens immobiliers des opérateurs, afin d'en réaliser l'entretien\ncourant,\n- avoir une vision stratégique sur la durée de ses contraintes, de ses potentialités et de son\nadéquation aux fonctionnalités et à l'usage afin d'inscrire les opérateurs dans une démarche\nstratégique quinquennale permettant d'accroitre leur performance immobilière.\nLe SPSI du Muséum se substitue ainsi au « Schéma Directeur de Rénovation du Patrimoine\nImmobilier », qui constituait depuis plusieurs années l’un des outils nécessaires à l’exercice des\nmissions de la Direction de la Rénovation et de la Maintenance.\n2. 1ère étape\n1. Plans et documents remis\nLa Direction de la Rénovation du Muséum s’engage à fournir au titulaire:\n- un plan du réseau d’eau potable et non potable de chaque site\n- un plan du réseau électrique de chaque site comportant l’emplacement des différents\npostes haute tension ainsi que leur principe de raccordement sur les artères du réseau\nErDF\n- un plan du réseau de chauffage urbain de chaque site comportant l’emplacement des\nsous stations\n- un plan du réseau de gaz de chaque site\n- un plan du réseau d’assainissement de chaque site\n- le plan de zonage du PPRI de Paris sur les deux sites",
+      "Maître d’OUVRAGE\nMUSEUM NATIONAL D’HISTOIRE NATURELLE\n57, RUE Cuvier\n75231 – PARIS cedex 05\n_____________\nOPERATION\nETUDE DE VULNERABILITE AU RISQUE\nD’INONDATION\nJardin des Plantes Ilot Poliveau\n57, rue Buffon, 75005 Paris 43 rue Buffon, 75005 Paris\nMARCHE DE PRESTATIONS INTELLECTUELLES\nCAHIER DES CLAUSES TECHNIQUES PARTICULIERES\n(C.C.T.P.)",
+      "N°\nContrat n° Lot Doc Rév Page\nordre\n19082 COMP CCTP 001 B2 4/40\n9.1.7 Calfeutrement en sous-face des bacs acier ................................................. 31\n9.1.8 Adaptation de la toiture................................................................................ 31\n9.1.9 Dévoiement, dépose, reposes diverses ....................................................... 32\n9.1.10 Réalisation d’un avis de chantier ................................................................. 32\n9.2 Locaux de stockage de liquides inflammables ........................................33\n9.2.1 Etat actuel et travaux à réaliser ................................................................... 33\n9.2.2 Enduit de projection des structures non-inscrites dans la paroi ................... 34\n9.2.3 Traitement des fissures des parois en parpaing .......................................... 34\n9.2.4 Encoffrement de la façade en bardage ........................................................ 34\n9.2.5 Passages de câbles et conduits traversant les parois coupe-feu ................. 35\n9.2.6 Traitement des jonctions entre murs parpaings et mur en bardage ............. 35\n9.2.7 Calfeutrement en sous-face des bacs acier ................................................. 35\n9.2.8 Adaptation de la toiture................................................................................ 36\n9.2.9 Dévoiement, dépose, reposes diverses ....................................................... 36"
+    ],
+    "sources": [
+      {
+        "document": "cctp3.pdf",
+        "page": 3,
+        "parent_id": "parent_283"
+      },
+      {
+        "document": "cctp3.pdf",
+        "page": 4,
+        "parent_id": "parent_285"
+      },
+      {
+        "document": "cctp3.pdf",
+        "page": 1,
+        "parent_id": "parent_280"
+      },
+      {
+        "document": "19082-COMP-CCTP-001.pdf",
+        "page": 4,
+        "parent_id": "parent_7"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 10.949
+  },
+  "25": {
+    "id": "25",
+    "question": "Quelle marque de peinture est imposée pour le marquage piquetage des réseaux de télécommunication ?",
+    "reference_answer": "",
+    "expected_document": "",
+    "expected_pages": "",
+    "answerable": "non",
+    "category": "question_absente",
+    "experiment_id": "547d0d6a10fe",
+    "configuration": "mistral_rag",
+    "config_details": {
+      "llm": "mistral",
+      "embedding": "nomic-embed-text",
+      "reranker": null,
+      "temperature": 0,
+      "parent_size": 1500,
+      "parent_overlap": 180,
+      "child_size": 400,
+      "child_overlap": 80,
+      "children_per_engine": 8,
+      "final_parents": 4,
+      "corpus": [
+        [
+          "19082-COMP-CCTP-001.pdf",
+          "7feb33f080cb763dbe37e2c239171be7c022ae36bdd8065c201df64550b78c8f"
+        ],
+        [
+          "cctp2.pdf",
+          "21c8dc1448b23e3caeb7199d1ebd58c278a34f75fd7d3bbe74018643c2cc2891"
+        ],
+        [
+          "cctp3.pdf",
+          "8c0b73dbce185b11172bd6b8bcc223894e518cce0b70f2677250ffb6b804ba15"
+        ],
+        [
+          "cctp_lot_1.pdf",
+          "3bbcf47d5322d53e68f492e9b7b4681987e7d58bc49061f4975aa5966c269395"
+        ]
+      ]
+    },
+    "timestamp": "2026-09-15T17:22:27.348131+00:00",
+    "response": " Selon le document cctp2.pdf, page 82, il n'est pas spécifié une marque de peinture imposée spécifiquement pour le marquage piquetage des réseaux de télécommunication. Cependant, il est mentionné que les outils utilisés pour le marquage doivent être adaptés au type de support et aux spécificités du lieu, et que les peintures ayant une courte durée de conservation seront à privilégier [source 1, page 82]. Il est également mentionné que le mode de marquage doit être adapté aux spécificités du lieu et des éventuelles spécifications des services de voirie [source 1, page 82]. Il est donc possible que des normes spécifiques pour le marquage des réseaux de télécommunication soient définies dans d'autres documents ou normes.",
+    "retrieved_contexts": [
+      "12.12.3 Le Marquage\n12.12.3.1 Définition\nLe « tracé au sol »\neffectués par un prestataire en charge de la détection au cours des investigations\ncomplémentaires en phase projet ou des opérations de localisation.\nLe tracé au sol devra être conforme à la norme NF S70-003-2 et notamment son annexe C (cf\ntableau de nomenclature du paragraphe suivant).\n12.12.3.2\nCe marquage devra respecter le code couleur, tel que défini dans la norme, permettre le repérage\ndes différents réseaux et donner des informations complémentaires utiles lors des travaux sous\nforme de code normalisé au sol :\n le positionnement des réseaux dans le sol en planimétrie et altimétrie (génératrice\nsupérieure) ;\n la nature des réseaux selon code couleur norme NF P 98-332 (cf tableau code couleur du\nparagraphe suivant) ;\n le diamètre des réseaux ;\n le nombre des réseaux\no emprise des réseaux (un réseau pourra être repéré par un simple trait ou un double\ntrait marquant les limites du fuseau du réseau).\nLes outils utilisés pour le marquage doivent être adaptés au type de support (contraintes\n, aux spécificités du lieu (patrimoine,\nlieux touristiques) et aux directives des services de voirie.\npeintures ayant une courte durée de conservation seront à privilégier.\ngréée pourra utiliser :\n un traceur de chantier temporaire (6 mois de persistance) ;\n la craie de trottoir ou crayon gras (zones de peinture interdite : se renseigner auprès du\ngestionnaire de la voirie) ;\n la peinture en tube ;",
+      " la mise en sécurité du personnel intervenant sur le chantier EPI (gilet, chaussures de\n;\n la recherche de réseaux par tout moyen\net/ou de la génératrice supérieure du réseau et de son encombrement (diamètre, section\n;\n l s,\nsupports, comprenant le relevé des départs, arrivées, diamètres et profondeurs des\nréseaux ;\n l\nnorme NF P 98-332, avec marquage du type de réseau (matérialisation de l\nou diamètre et de la profondeur.\nmarquage devra rester visible à minima pendant 3 mois sauf spécification contraire. Dans\ntous les cas le mode\nde marquage doit être adapté aux spécificités du lieu et des éventuelles spécifications des\nservices de voirie ;\n la reconnaissance approfondie du sous-\nou par des méthodes complémentaires dont la radiodétection (Champs passifs Réseaux\nalimentés en courant / Champs Actifs Injection de courant et de champ\nélectromagnétique) et la recherche acoustique ;\n l ;\n l ecté des réseaux en classe de précision A sur le fond de plan\nénératrice supérieure du\nréseau ;\n la rédaction du rapport comprenant le récapitulatif des réseaux relevés avec analyse et\ninterprétation des résultats par rapport aux indications initiales.\n12.12.2.3 Choix du matériel de détection\nLEntreprise Agréée doit être certifié pour le type de détection choisi.\nde Classe A.\n(conformément aux prescriptions de la partie 2 de la norme NF S70-003) :\n la détection par méthode acoustique ;\n la détection par méthode vibratoire ;\n la détection par radar géophysique ;",
+      " la durée dans le temps des marquages (relevé de points de référence en tranchée fermée)\ndoit être adaptée au chantier selon les directives des services de voirie, en privilégiant des\nmarquages les plus discrets possibles ;\n l diverses aux formats PDF\nou XLS ;\n l\nindemnité, ni à prolongation de délai.\nicle L 554-\nresponsable de projet, exploitant de réseau, entreprise exécutant les travaux.\nLa localisation des ouvrages doit impérativement être réalisé avec une précision de classe A, la\npeut avoir des conséquences graves et entraîner des sanctions administratives ou pénales.\nChaque restitution de localisation des ouvrages enterrés, et chaque piquetage marquage\nengagent également la responsabilité du titulaire.\nGéoréférencement\nPréambule :\nprésent marché. Tout relevé est géo référencé en planimétrie (X, Y) et en altimétrie (Z). Le résultat\nouvrages en planimétrie et de la génératrice des canalisations ou face supérieure en altimétrie.\nMéthodologie :\nles lieux et obstacles mais devront garantir la classe de précision A. Il est rappelé au prestataire\nson obligation de résultat sur la précision du géo référencement en planimétrie et en altimétrie.\nSystème de référence :\nToutes les données produites doivent être rattachées au système de référence en vigueur suivant :\n en planimétrie, le système géodésique RGF93 et la projection Conique Conforme (9 zones)\napplicable à la zone géographique du chantier (dans le département des Deux-Sèvres, le",
+      "canalisations, des branchements et ouvrages annexes aux réseaux.\n après le déroulement du chantier, en tranchée fermée : relevé des marquages laissés par\nles entreprises après travaux.\nLes plans de récolement devront représenter tous les réseaux et ouvrages visibles et non visibles\ntels qu'ils ont été réellement exécutés avec indication des caractéristiques et positionnement précis.\ninhérente à chaque nature de prestations et seront systématiquement rattachées. Le prestataire\nIl revient au titulaire :\n d géo référencement des réseaux (en cas de sous-traitance,\nle prestataire sous-traitant devra être certifié sur lun des domaines dintervention et\n;\n de garantir la classe de précision A.\n d ions\ninterventions sur les organes contenus dans les affleurant ou réseaux dans le périmètre\nL obligation de résultats pour la classe de précision A de localisation des\nouvrages enterrés, soit :\n l\n;\n la matérialisation de tous les points détectés sous forme de marquage peinture ou piquets\ntemporaires le temps du géo référencement ;\nD-R3-SU-33 : CCTP applicable aux prestations de travaux -2. 69/123"
+    ],
+    "sources": [
+      {
+        "document": "cctp2.pdf",
+        "page": 82,
+        "parent_id": "parent_207"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 81,
+        "parent_id": "parent_205"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 70,
+        "parent_id": "parent_184"
+      },
+      {
+        "document": "cctp2.pdf",
+        "page": 69,
+        "parent_id": "parent_183"
+      }
+    ],
+    "status": "ok",
+    "error": "",
+    "latency_seconds": 30.378
+  }
+}

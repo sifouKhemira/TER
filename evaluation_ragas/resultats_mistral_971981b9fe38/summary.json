@@ -1,0 +1,53 @@
+{
+  "config": {
+    "judge": "llama3.1:8b",
+    "judge_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "num_ctx": 16384,
+    "temperature": 0,
+    "seed": 42,
+    "timeout": 600,
+    "input_sha256": "b8e2fe303d84268739752d068f3161f2f720c642e6df0f504e5f304e745b8691",
+    "script_sha256": "f7790b3f83234a3af8de3c86ab2e4a49e4cadfed6d5e74178bf7c7eae310afd8",
+    "versions": {
+      "ragas": "0.4.3",
+      "langchain-ollama": "1.1.0",
+      "langchain-core": "1.6.2",
+      "ollama": "0.6.2"
+    }
+  },
+  "metrics": {
+    "faithfulness": {
+      "mean": 0.5466666666666666,
+      "n_valid": 20,
+      "n_errors": 0,
+      "n_skipped": 0
+    },
+    "factual_correctness_f1": {
+      "mean": 0.5705,
+      "n_valid": 20,
+      "n_errors": 0,
+      "n_skipped": 0
+    },
+    "context_precision": {
+      "mean": 0.8652777777233795,
+      "n_valid": 20,
+      "n_errors": 0,
+      "n_skipped": 0
+    },
+    "context_recall": {
+      "mean": 0.9357142857142857,
+      "n_valid": 20,
+      "n_errors": 0,
+      "n_skipped": 0
+    },
+    "correct_abstention": {
+      "mean": 0.8,
+      "n_valid": 5,
+      "n_errors": 0,
+      "n_skipped": 0
+    }
+  },
+  "total_rows": 25,
+  "evaluated_rows": 25,
+  "note": "Les moyennes excluent les erreurs et les valeurs non applicables. Les références Gemini et les citations restent à vérifier humainement."
+}

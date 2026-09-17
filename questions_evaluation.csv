@@ -1,0 +1,26 @@
+id;question;reference_answer;expected_document;expected_pages;answerable;category
+1;Quelles sont les plages horaires autorisées pour les livraisons de matériel ?;Les livraisons sont autorisées de 8h00 à 16h45 du lundi au vendredi sauf jours fériés, et le personnel de DEN BRAVEN n'est pas autorisé à les réceptionner.;19082-COMP-CCTP-001.pdf;14;oui;obligation
+2;Quels sont les EPI obligatoires mentionnés pour le chantier ?;Le matériel de sécurité comprend casques, chaussures, lunettes, gants, vêtements couvrants et harnais.;19082-COMP-CCTP-001.pdf;4;oui;obligation
+3;Quelle est la température critique associée au classement R120 pour les structures métalliques en débord ?;La température critique est de 500 °C avec le produit PROMASPRAY P300.;19082-COMP-CCTP-001.pdf;34;oui;valeur_technique
+4;À partir de combien d'intervenants la présence d'un préventeur sécurité devient-elle obligatoire ?;À partir de 15 intervenants.;19082-COMP-CCTP-001.pdf;11;oui;information_directe
+5;À quelles caractéristiques européennes correspondent les anciennes classes françaises SF et PF ?;SF correspond à R (Résistance mécanique) et PF correspond à E (Étanchéité aux flammes).;19082-COMP-CCTP-001.pdf;24;oui;synthese
+6;Quel est l'objet principal du CCTP Lot 1 ?;Le projet concerne l'aménagement intérieur d'un Espace Numérique à Arue pour le compte de la CCISM[cite: 2].;cctp_lot_1.pdf;3;oui;information_directe
+7;Comment les éléments en acier de la charpente doivent-ils être protégés contre la corrosion ?;Tous les éléments en acier doivent être protégés par galvanisation à chaud[cite: 2].;cctp_lot_1.pdf;6;oui;obligation
+8;Quelle est la surcharge totale à prendre en compte pour les poutres porteuses ?;La surcharge totale à prendre en compte est de 250 kg/m2[cite: 2].;cctp_lot_1.pdf;8;oui;valeur_technique
+9;Quelle est la durée de la garantie de parfait achèvement ?;La durée est d'un an à compter de la date de réception des ouvrages[cite: 2].;cctp_lot_1.pdf;7;oui;obligation
+10;Quelle doit être la hauteur des garde-corps industriels ?;La hauteur requise est de 1,10 m conformément aux normes NF E 85-015[cite: 2].;cctp_lot_1.pdf;9;oui;valeur_technique
+11;À quel article du Code de l'Energie le document fait-il référence pour le Contrat de Mandat ?;Il fait référence à l'article L. 342-2 du Code de l'Energie[cite: 1].;cctp2.pdf;5;oui;information_directe
+12;Qui est désigné comme Responsable de Traitement des données à caractère personnel ?;Le Responsable de Traitement est le Mandataire signataire du marché[cite: 1].;cctp2.pdf;8;oui;obligation
+13;Quelle est la hauteur de recouvrement exigée pour une tranchée en terrain agricole labourable ?;La hauteur de recouvrement exigée est de 110 cm[cite: 1].;cctp2.pdf;39;oui;valeur_technique
+14;Quel est le diamètre intérieur minimal autorisé pour un fourreau de câble de branchement BT ?;Le diamètre intérieur minimal peut être de 50 mm[cite: 1].;cctp2.pdf;43;oui;valeur_technique
+15;Quels documents le Mandataire doit-il fournir pour le repérage de l'amiante dans un immeuble bâti ?;Il doit fournir le Dossier Technique Amiante (DTA) et le Repérage Avant Travaux (RAT)[cite: 1].;cctp2.pdf;51;oui;synthese
+16;Quels sont les deux sites parisiens concernés par l'étude de vulnérabilité ?;Les deux sites sont le Jardin des Plantes et l'îlot Buffon-Poliveau[cite: 3].;cctp3.pdf;1;oui;information_directe
+17;Quelles sont les deux types de crues étudiées pour évaluer la vulnérabilité des sites ?;L'étude porte sur la crue cinquantennale et la crue centennale[cite: 3].;cctp3.pdf;1;oui;information_directe
+18;Que signifie l'acronyme SPSI dans le contexte du Muséum ?;SPSI signifie Schéma Pluriannuel de Stratégie Immobilière[cite: 3].;cctp3.pdf;1;oui;information_directe
+19;Quels fluides cryogéniques nécessitent une évaluation des risques d'approvisionnement ?;Il s'agit de l'azote liquide et de l'hélium liquide[cite: 3].;cctp3.pdf;3;oui;valeur_technique
+20;Quels sont les trois niveaux de dégâts définis dans la matrice de criticité ?;Les trois niveaux sont Dégâts faibles, Dégâts moyens et Dégâts forts[cite: 3].;cctp3.pdf;3;oui;synthese
+21;Quelle est l'adresse exacte du fournisseur des profilés métalliques de la charpente ?;;;;;non;question_absente
+22;Quel est le montant des pénalités financières journalières en cas de retard de livraison du chantier DEN BRAVEN ?;;;;;non;question_absente
+23;Quel est le budget total alloué par GÉRÉDIS pour les travaux de raccordement électrique ?;;;;;non;question_absente
+24;Qui est le directeur actuel du Muséum National d'Histoire Naturelle ?;;;;;non;question_absente
+25;Quelle marque de peinture est imposée pour le marquage piquetage des réseaux de télécommunication ?;;;;;non;question_absente
