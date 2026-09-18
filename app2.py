@@ -1,3 +1,6 @@
+import html
+import threading
+from queue import Queue, Empty
 import hashlib
 import inspect
 import io
@@ -169,7 +172,7 @@ html, body, [class*="css"] { font-family:'Inter', -apple-system, sans-serif; }
 /* ---------- Hero ---------- */
 .hero {
   position:relative; overflow:hidden;
-  padding:42px 44px; border-radius:22px; margin-bottom:26px;
+  padding:20px 28px; border-radius:16px; margin-bottom:16px;
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 55%, #0a3a3f 100%);
   box-shadow: var(--shadow);
 }
@@ -183,12 +186,12 @@ html, body, [class*="css"] { font-family:'Inter', -apple-system, sans-serif; }
 }
 .hero .eyebrow::before { content:""; width:16px; height:1.5px; background:#6fe3cf; display:inline-block; }
 .hero h1 {
-  color:white; font-size:clamp(30px,4vw,46px); line-height:1.12; margin:14px 0 10px 0;
+  color:white; font-size:clamp(24px,3vw,32px); line-height:1.12; margin:8px 0 6px 0;
   font-weight:800; letter-spacing:-.03em; position:relative;
 }
 .hero p { color:#b9cfda; font-size:16.5px; max-width:640px; margin:0; line-height:1.55; }
 .hero .badge {
-  display:inline-flex; align-items:center; gap:7px; margin-top:24px; padding:7px 14px;
+  display:inline-flex; align-items:center; gap:7px; margin-top:10px; padding:4px 10px;
   border:1px solid rgba(111,227,207,.35); background:rgba(111,227,207,.08);
   border-radius:30px; color:#b3eee5; font-size:12.5px; font-weight:500;
 }
@@ -300,6 +303,139 @@ hr { border-color:var(--line); }
     -webkit-text-fill-color:#ffffff !important;
 }
 
+
+/* Compact header, visible sidebar controls and accessible activity animation. */
+.stApp [data-testid="stSidebarCollapsedControl"],
+.stApp [data-testid="collapsedControl"],
+.stApp [data-testid="stSidebarCollapseButton"] {
+  visibility:visible!important; opacity:1!important;
+  background:#e8f1f4!important; border-radius:9px;
+}
+.stApp [data-testid="stSidebarCollapsedControl"] *,
+.stApp [data-testid="collapsedControl"] *,
+.stApp [data-testid="stSidebarCollapseButton"] * {
+  color:#123447!important; -webkit-text-fill-color:#123447!important;
+}
+.stApp [data-testid="stSidebarCollapsedControl"] svg,
+.stApp [data-testid="collapsedControl"] svg,
+.stApp [data-testid="stSidebarCollapseButton"] svg { fill:currentColor!important; }
+.evol-loading {
+  padding:20px 24px; margin:12px 0; background:#edf7f5;
+  border:1px solid #b9ded5; border-radius:14px; color:#123447;
+}
+.evol-loading .wordmark { font-size:22px; font-weight:800; letter-spacing:.18em; }
+.evol-loading .wordmark span { display:inline-block; animation:evol-pulse 1.6s ease-in-out infinite; }
+.evol-loading p { color:#355765!important; margin:8px 0 0; }
+@keyframes evol-pulse { 0%,100% {opacity:.45;transform:translateY(0)} 50% {opacity:1;transform:translateY(-3px)} }
+@media (prefers-reduced-motion:reduce) { .evol-loading .wordmark span {animation:none;} }
+.answer-card { white-space:pre-wrap; overflow-wrap:anywhere; }
+.answer-card .citation { text-decoration:underline; text-decoration-color:#087f73; text-underline-offset:4px; }
+.st-key-cancel_analysis button {background:#fff1f0!important;border:1px solid #b42318!important;}
+.st-key-cancel_analysis button * {color:#b42318!important;-webkit-text-fill-color:#b42318!important;}
+
+
+/* Glass surfaces: opaque fallback first, blur when supported. */
+.stApp {
+  background:
+    radial-gradient(ellipse at 8% 15%, #b9e6df 0, transparent 43%),
+    radial-gradient(ellipse at 92% 38%, #c9dafa 0, transparent 46%),
+    linear-gradient(145deg,#edf6f8,#e6edf5 60%,#edf7f4);
+  background-attachment:fixed;
+}
+[data-testid="stHeader"] {
+  background:rgba(240,247,250,.88)!important;
+  border-bottom:1px solid rgba(255,255,255,.8);
+}
+.block-container { padding-top:4rem; }
+.stApp [data-testid="stForm"], .stApp .answer-card,
+.stApp [data-testid="stExpander"], .stApp [data-testid="stExpander"] details,
+.stApp [data-testid="stExpanderDetails"] {
+  background:rgba(255,255,255,.88)!important;
+  border-color:rgba(255,255,255,.95)!important;
+  box-shadow:0 8px 28px rgba(30,65,91,.07),inset 0 1px 0 rgba(255,255,255,.9);
+}
+.stApp [data-testid="stExpander"] summary {
+  background:rgba(227,240,244,.85)!important;
+}
+.stApp [data-testid="stExpander"] pre { background:transparent!important; }
+.stApp [data-baseweb="tab-list"] {
+  background:rgba(255,255,255,.7); border:1px solid rgba(255,255,255,.95);
+  border-radius:14px; padding:6px 10px; gap:12px;
+  box-shadow:0 6px 20px rgba(30,65,91,.05);
+}
+.stApp [role="tab"] { padding:10px 16px!important; border-radius:10px; }
+.stApp [role="tab"][aria-selected="true"] { background:rgba(194,233,224,.8); }
+.stApp .hero {
+  background:linear-gradient(115deg,rgba(13,44,62,.94),rgba(16,81,85,.88));
+  border:1px solid rgba(255,255,255,.55);
+  box-shadow:0 12px 32px rgba(20,57,75,.13),inset 0 1px 0 rgba(255,255,255,.15);
+}
+.stApp [data-testid="stSidebar"] {
+  background:linear-gradient(165deg,rgba(15,40,58,.97),rgba(20,66,77,.96));
+  border-right:1px solid rgba(255,255,255,.45);
+}
+.stApp [data-testid="stSidebar"] [data-testid="stForm"] {
+  background:rgba(29,70,85,.9)!important;
+}
+.stApp [data-testid="stTextInput"] input {
+  background:rgba(255,255,255,.95)!important; color:#123447!important;
+  
+}
+.stApp .evol-loading {
+  background:rgba(234,249,245,.88); border:1px solid white;
+  box-shadow:0 8px 28px rgba(30,65,91,.07);
+}
+@supports ((backdrop-filter:blur(18px)) or (-webkit-backdrop-filter:blur(18px))) {
+  [data-testid="stHeader"], .stApp .hero,
+  .stApp [data-testid="stForm"], .stApp .answer-card,
+  .stApp [data-baseweb="tab-list"], .stApp .evol-loading,
+  .stApp [data-testid="stSidebar"] {
+    -webkit-backdrop-filter:blur(18px); backdrop-filter:blur(18px);
+  }
+  .stApp [data-testid="stForm"], .stApp .answer-card {
+    background:rgba(255,255,255,.72)!important;
+  }
+}
+
+/* Streamlit uses stExpandSidebarButton in recent versions.
+   Draw a menu icon in CSS so visibility does not depend on icon fonts.
+   Only style controls already present: never force a hidden sidebar open. */
+[data-testid="stExpandSidebarButton"],
+[data-testid="stSidebarCollapsedControl"],
+[data-testid="collapsedControl"] {
+  opacity:1!important; visibility:visible!important;
+  z-index:1000001!important;
+}
+[data-testid="stExpandSidebarButton"] button,
+button[data-testid="stExpandSidebarButton"],
+[data-testid="stSidebarCollapsedControl"] button,
+[data-testid="collapsedControl"] button {
+  position:relative!important; width:42px!important; height:42px!important;
+  min-width:42px!important; min-height:42px!important;
+  background:#123e50!important; border:1px solid #6694a0!important;
+  border-radius:12px!important; opacity:1!important; visibility:visible!important;
+  box-shadow:0 3px 10px rgba(14,37,54,.2)!important;
+}
+[data-testid="stExpandSidebarButton"] button::after,
+button[data-testid="stExpandSidebarButton"]::after,
+[data-testid="stSidebarCollapsedControl"] button::after,
+[data-testid="collapsedControl"] button::after {
+  content:""; position:absolute; left:11px; top:13px;
+  width:18px; height:2px; border-radius:2px;
+  background:#fff!important; box-shadow:0 6px 0 #fff,0 12px 0 #fff;
+  pointer-events:none;
+}
+[data-testid="stExpandSidebarButton"] button > *,
+button[data-testid="stExpandSidebarButton"] > *,
+[data-testid="stSidebarCollapsedControl"] button > *,
+[data-testid="collapsedControl"] button > * { opacity:0!important; }
+[data-testid="stExpandSidebarButton"] button:focus-visible,
+button[data-testid="stExpandSidebarButton"]:focus-visible,
+[data-testid="stSidebarCollapsedControl"] button:focus-visible,
+[data-testid="collapsedControl"] button:focus-visible {
+  outline:3px solid #078577!important; outline-offset:3px;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -322,7 +458,7 @@ with st.sidebar:
 st.markdown("""
 <div class="hero">
 <div class="eyebrow">Bureau d'études · Assistant documentaire</div>
-<h1>Vos documents.<br>Des réponses sourcées.</h1>
+<h1>Vos documents. Des réponses sourcées.</h1>
 <p>Explorez les exigences, obligations et données techniques de vos CCTP depuis un seul espace.</p>
 <span class="badge">Qwen3 · Exécution locale</span>
 </div>
@@ -898,7 +1034,8 @@ with st.sidebar:
             **({'max_upload_size': MAX_UPLOAD_MB}
                if 'max_upload_size' in inspect.signature(st.file_uploader).parameters else {}),
         )
-        importer = st.form_submit_button('Importer et actualiser l’index')
+        importer = st.form_submit_button('Importer et actualiser l’index',
+            disabled=st.session_state.get('analyse_en_cours', False))
     if importer:
         messages = []
         ajoutes = 0
@@ -1030,7 +1167,7 @@ with st.sidebar:
 # lancer l'évaluation, plutôt que de tout empiler sur une seule
 # page qui devient vite illisible
 
-assistant_tab, documents_tab, evaluation_tab = st.tabs(['💬 Assistant', '📚 Documents', '📊 Évaluation'])
+assistant_tab, documents_tab, evaluation_tab = st.tabs([':material/forum: Assistant', ':material/folder_open: Documents', ':material/analytics: Évaluation'])
 with documents_tab:
     st.subheader('Votre bibliothèque')
     st.caption('Documents PDF présents dans le dossier de l’application.')
@@ -1045,6 +1182,93 @@ def demander_analyse():
         st.session_state['analyse_en_cours'] = True
         st.session_state['analyse_a_lancer'] = True
         st.session_state.pop('analyse_message', None)
+
+
+def executer_requete(job, question, index, modele_reranker, pipeline):
+    """Worker sans accès à Streamlit; annulation coopérative entre étapes/tokens."""
+    flux = None
+    try:
+        if job['cancel'].is_set():
+            return
+        parents = recherche_hybride_parent(
+            question=question, index_documentaire=index, reranker=modele_reranker,
+            k_enfants=NOMBRE_ENFANTS_PAR_MOTEUR,
+            k_enfants_rerankes=NOMBRE_ENFANTS_APRES_RERANKING,
+            k_parents=NOMBRE_PARENTS_FINAUX)
+        if job['cancel'].is_set():
+            return
+        if not parents:
+            job['results'].put(('warning', 'Aucun passage retrouvé.'))
+            return
+        job['progress'].put('Rédaction de la réponse')
+        morceaux = []
+        flux = pipeline.stream({'context': formater_contexte(parents), 'input': question})
+        for morceau in flux:
+            if job['cancel'].is_set():
+                return
+            morceaux.append(morceau)
+        if not job['cancel'].is_set():
+            job['results'].put(('result', {
+                'question': question, 'response': ''.join(morceaux), 'parents': parents}))
+    except Exception as erreur:
+        if not job['cancel'].is_set():
+            job['results'].put(('error', f'Analyse interrompue : {erreur}'))
+    finally:
+        try:
+            if flux is not None and hasattr(flux, 'close'):
+                flux.close()
+        finally:
+            job['done'].set()
+
+
+def formater_reponse_ui(texte):
+    """Échapper le HTML du modèle; remplacer les étoiles de mise en forme."""
+    texte = html.escape(texte)
+    texte = re.sub(r"\*\*(.+?)\*\*", r"<u>\1</u>", texte, flags=re.S)
+    texte = re.sub(r"(?<!\*)\*([^*\n]+)\*(?!\*)", r"<u>\1</u>", texte)
+    return re.sub(r"(\[[^\]\n]*\.pdf[^\]\n]*\])",
+                  r'<span class="citation">\1</span>', texte, flags=re.I)
+
+
+@st.fragment(run_every=0.5)
+def suivre_analyse():
+    job = st.session_state.get('analyse_job')
+    if job is None:
+        return
+    if job['done'].is_set():
+        st.session_state['analyse_en_cours'] = False
+        st.session_state.pop('analyse_job', None)
+        if job['cancel'].is_set():
+            st.session_state['analyse_message'] = ('info', 'Requête annulée.')
+        else:
+            try:
+                nature, contenu = job['results'].get_nowait()
+                if nature == 'result':
+                    st.session_state['ui_result'] = contenu
+                    st.session_state['analyse_message'] = ('success', 'Analyse terminée.')
+                else:
+                    st.session_state['analyse_message'] = (nature, contenu)
+            except Empty:
+                st.session_state['analyse_message'] = ('error', 'Aucune réponse reçue.')
+        st.rerun()
+    if st.button('Annuler la requête', key='cancel_analysis',
+                 disabled=job['cancel'].is_set()):
+        job['cancel'].set()
+        st.rerun(scope='fragment')
+    while True:
+        try:
+            job['phase'] = job['progress'].get_nowait()
+        except Empty:
+            break
+    phase = ('Annulation demandée — arrêt à la fin de l’étape en cours.'
+             if job['cancel'].is_set() else job['phase'])
+    lettres = ''.join(
+        f'<span style="animation-delay:{i * .09}s">{lettre}</span>'
+        for i, lettre in enumerate('EVOLUTYS'))
+    st.markdown(
+        f'<div class="evol-loading" role="status" aria-live="polite">'
+        f'<div class="wordmark" aria-label="EVOLUTYS">{lettres}</div>'
+        f'<p>{html.escape(phase)}</p></div>', unsafe_allow_html=True)
 
 
 with assistant_tab:
@@ -1066,38 +1290,26 @@ with assistant_tab:
 
 with assistant_tab:
     if st.session_state.pop('analyse_a_lancer', False):
-        try:
-            if not question.strip():
-                st.session_state['analyse_message'] = ('warning', 'Veuillez entrer une question.')
-            else:
-                st.session_state.pop('ui_result', None)
-                with st.spinner('Recherche des passages et rédaction de la réponse…'):
-                    meilleurs_parents = recherche_hybride_parent(
-                        question=question,
-                        index_documentaire=index_documentaire,
-                        reranker=reranker,
-                        k_enfants=NOMBRE_ENFANTS_PAR_MOTEUR,
-                        k_enfants_rerankes=NOMBRE_ENFANTS_APRES_RERANKING,
-                        k_parents=NOMBRE_PARENTS_FINAUX,
-                    )
-                    if not meilleurs_parents:
-                        st.session_state['analyse_message'] = ('warning', 'Aucun passage retrouvé.')
-                    else:
-                        reponse = chain.invoke({
-                            'context': formater_contexte(meilleurs_parents),
-                            'input': question,
-                        })
-                        st.session_state['ui_result'] = {
-                            'question': question, 'response': reponse,
-                            'parents': meilleurs_parents,
-                        }
-                        st.session_state['analyse_message'] = ('success', 'Analyse terminée.')
-        except Exception as erreur:
-            st.session_state['analyse_message'] = (
-                'error', f'Analyse interrompue : {erreur}. Vérifiez qu’Ollama fonctionne.')
-        finally:
+        if not question.strip():
             st.session_state['analyse_en_cours'] = False
-        st.rerun()
+            st.session_state['analyse_message'] = ('warning', 'Veuillez entrer une question.')
+            st.rerun()
+        else:
+            st.session_state.pop('ui_result', None)
+            job = {
+                'cancel': threading.Event(), 'done': threading.Event(),
+                'results': Queue(), 'progress': Queue(),
+                'phase': 'Recherche et classement des passages',
+            }
+            st.session_state['analyse_job'] = job
+            threading.Thread(
+                target=executer_requete,
+                args=(job, question, index_documentaire, reranker, chain),
+                daemon=True,
+            ).start()
+
+    if st.session_state.get('analyse_job') is not None:
+        suivre_analyse()
 
     message_analyse = st.session_state.get('analyse_message')
     if message_analyse:
@@ -1109,7 +1321,7 @@ with assistant_tab:
         st.markdown('<div class="result-meta">Question analysée</div>', unsafe_allow_html=True)
         st.write(resultat_ui['question'])
         st.subheader('Réponse')
-        st.markdown(f'<div class="answer-card">{resultat_ui["response"]}</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="answer-card">{formater_reponse_ui(resultat_ui["response"])}</div>', unsafe_allow_html=True)
         st.caption('Vérifiez les sources avant toute utilisation technique de la réponse.')
         st.download_button('Exporter la réponse',
             resultat_ui['question'] + "\n\n" + resultat_ui['response'],
@@ -1296,7 +1508,8 @@ with evaluation_tab:
                 "L'indexation et le chargement initial des modèles sont exclus."
             )
 
-            if st.button("Lancer / reprendre l'évaluation Qwen"):
+            if st.button("Lancer / reprendre l'évaluation Qwen",
+                         disabled=st.session_state.get("analyse_en_cours", False)):
                 progression_eval = st.progress(0.0)
                 statut_eval = st.empty()
 
