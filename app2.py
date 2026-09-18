@@ -1,4 +1,8 @@
 import hashlib
+import inspect
+import io
+import re
+import pdfplumber
 from pathlib import Path
 
 import streamlit as st
@@ -38,6 +42,7 @@ NOMBRE_ENFANTS_PAR_MOTEUR = 12          # nb de résultats gardés par moteur (B
 NOMBRE_CANDIDATS_RERANKER = 20          # combien d'enfants on envoie au reranker
 NOMBRE_ENFANTS_APRES_RERANKING = 8      # combien on garde après reranking
 NOMBRE_PARENTS_FINAUX = 8               # combien de parents envoyés au LLM
+MAX_UPLOAD_MB = 50
 TAILLE_BATCH_EMBEDDINGS = 16            # lots pour pas surcharger Ollama
 
 
@@ -216,6 +221,85 @@ hr { border-color:var(--line); }
   .block-container { padding:1rem; }
   .hero { padding:26px; }
 }
+
+/* Explicit descendant colours override theme colours on Markdown labels. */
+.stApp [role="tab"], .stApp [role="tab"] * {
+  color:#3c5566 !important; -webkit-text-fill-color:#3c5566 !important;
+  opacity:1 !important;
+}
+.stApp [role="tab"][aria-selected="true"],
+.stApp [role="tab"][aria-selected="true"] *,
+.stApp [role="tab"]:hover, .stApp [role="tab"]:hover * {
+  color:#076b62 !important; -webkit-text-fill-color:#076b62 !important;
+}
+.stApp [role="tab"]:focus-visible {outline:2px solid #087f80;outline-offset:-2px;}
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"],
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"] * {color:#c6d8e2 !important;}
+[data-testid="stSidebar"] [data-testid="stForm"] {background:#17394b !important;}
+[data-testid="stSidebar"] [data-testid="stWidgetLabel"] * {color:#edf5fa !important;}
+[data-testid="stFileUploaderDropzone"] {background:#f4f7fa !important;border:1px dashed #93aebb !important;}
+[data-testid="stFileUploaderDropzone"],
+[data-testid="stFileUploaderDropzone"] * {color:#172c3c !important;}
+[data-testid="stFileUploaderDropzone"] button {background:white !important;color:#076b62 !important;border:1px solid #087f80 !important;}
+[data-testid="stFileUploaderDropzone"] button * {color:#076b62 !important;}
+[data-testid="stFormSubmitButton"] button * {color:white !important;}
+.stDownloadButton button * {color:#076b62 !important;}
+
+
+/* Keep source panels readable regardless of Streamlit's active theme. */
+.stApp [data-testid="stExpander"],
+.stApp [data-testid="stExpander"] details,
+.stApp [data-testid="stExpanderDetails"] {
+    background:#ffffff !important;
+    color:#172c3c !important;
+}
+.stApp [data-testid="stExpander"] summary,
+.stApp [data-testid="stExpander"] summary:hover,
+.stApp [data-testid="stExpander"] summary:focus {
+    background:#e8f1f4 !important;
+    color:#172c3c !important;
+}
+.stApp [data-testid="stExpander"] summary *,
+.stApp [data-testid="stExpanderDetails"] [data-testid="stText"],
+.stApp [data-testid="stExpanderDetails"] [data-testid="stText"] *,
+.stApp [data-testid="stExpander"] pre,
+.stApp [data-testid="stExpander"] pre *,
+.stApp [data-testid="stExpander"] [data-testid="stMarkdownContainer"],
+.stApp [data-testid="stExpander"] [data-testid="stMarkdownContainer"] * {
+    color:#172c3c !important;
+    -webkit-text-fill-color:#172c3c !important;
+    opacity:1 !important;
+}
+.stApp [data-testid="stExpander"] pre {
+    background:#ffffff !important;
+    white-space:pre-wrap;
+    overflow-wrap:anywhere;
+}
+.stApp [data-testid="stExpander"] [data-testid="stCaptionContainer"],
+.stApp [data-testid="stExpander"] [data-testid="stCaptionContainer"] * {
+    color:#3c5566 !important;
+    -webkit-text-fill-color:#3c5566 !important;
+}
+.stApp .answer-card, .stApp .answer-card * {
+    color:#172c3c !important;
+    -webkit-text-fill-color:#172c3c !important;
+}
+
+
+/* Only the analysis form has this busy state; import stays unchanged. */
+.st-key-question_form [data-testid="stFormSubmitButton"] button:disabled {
+    background:#b45309 !important;
+    color:#ffffff !important;
+    opacity:1 !important;
+    cursor:wait !important;
+    transform:none !important;
+    box-shadow:none !important;
+}
+.st-key-question_form [data-testid="stFormSubmitButton"] button:disabled * {
+    color:#ffffff !important;
+    -webkit-text-fill-color:#ffffff !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -387,7 +471,8 @@ def preparer_index_documentaire(
     # On construit donc l'index par petits lots.
     for debut in range(0, len(child_docs), TAILLE_BATCH_EMBEDDINGS):
         fin = debut + TAILLE_BATCH_EMBEDDINGS
-        vectorstore.add_documents(child_docs[debut:fin])
+        lot = child_docs[debut:fin]
+        vectorstore.add_documents(lot, ids=[d.metadata['child_id'] for d in lot])
 
     return {
         "pages": pages,
@@ -764,13 +849,88 @@ chain = prompt | llm | StrOutputParser()
 # 8. VÉRIFICATION ET CHARGEMENT DE L'INDEX
 # ============================================================
 
+def enregistrer_pdf_importe(nom, contenu, dossier):
+    """Valide un PDF texte puis le sauvegarde sans écraser de document."""
+    nom = nom.replace('\\', '/').split('/')[-1]
+    if not nom.lower().endswith('.pdf'):
+        raise ValueError('Seuls les fichiers PDF sont acceptés.')
+    if not contenu or len(contenu) > MAX_UPLOAD_MB * 1024 * 1024:
+        raise ValueError('Le fichier doit contenir entre 1 octet et 50 Mo.')
+    empreinte = hashlib.sha256(contenu).hexdigest()
+    for existant in dossier.glob('*.pdf'):
+        if hashlib.sha256(existant.read_bytes()).hexdigest() == empreinte:
+            return existant, False
+    try:
+        with pdfplumber.open(io.BytesIO(contenu)) as pdf:
+            lisible = any((page.extract_text() or '').strip() for page in pdf.pages)
+    except Exception as erreur:
+        raise ValueError('PDF illisible, endommagé ou protégé par mot de passe.') from erreur
+    if not lisible:
+        raise ValueError('Ce PDF ne contient pas de texte extractible. Effectuez un OCR avant de l’importer.')
+    base = re.sub(r'[^\w. -]', '_', Path(nom).stem).strip(' .')[:100] or 'document'
+    index = 0
+    while True:
+        suffixe = '' if index == 0 else f'_{index}'
+        destination = dossier / f'{base}{suffixe}.pdf'
+        try:
+            with destination.open('xb') as fichier:
+                try:
+                    fichier.write(contenu)
+                except Exception:
+                    destination.unlink(missing_ok=True)
+                    raise
+            return destination, True
+        except FileExistsError:
+            index += 1
+
+
+# L'import reste accessible même lorsque le corpus est vide.
+with st.sidebar:
+    st.divider()
+    st.subheader('Ajouter des documents')
+    st.caption(f'PDF avec texte · {MAX_UPLOAD_MB} Mo maximum par fichier. Les fichiers sont conservés dans le dossier de l’application.')
+    for message in st.session_state.pop('import_messages', []):
+        st.info(message)
+    with st.form('import_pdf_form', clear_on_submit=True):
+        fichiers_importes = st.file_uploader(
+            'Choisir un ou plusieurs PDF', type=['pdf'],
+            accept_multiple_files=True,
+            **({'max_upload_size': MAX_UPLOAD_MB}
+               if 'max_upload_size' in inspect.signature(st.file_uploader).parameters else {}),
+        )
+        importer = st.form_submit_button('Importer et actualiser l’index')
+    if importer:
+        messages = []
+        ajoutes = 0
+        if not fichiers_importes:
+            st.warning('Sélectionnez au moins un PDF.')
+        else:
+            with st.spinner('Vérification des documents…'):
+                for fichier in fichiers_importes:
+                    try:
+                        destination, nouveau = enregistrer_pdf_importe(
+                            fichier.name, fichier.getvalue(), APP_DIR)
+                        ajoutes += int(nouveau)
+                        messages.append(
+                            f'{destination.name} : ajouté.' if nouveau
+                            else f'{fichier.name} : déjà présent sous {destination.name}.')
+                    except Exception as erreur:
+                        messages.append(f'{fichier.name} : import refusé — {erreur}')
+            if ajoutes:
+                # Évite de présenter une ancienne réponse comme résultat du nouveau corpus.
+                st.session_state.pop('ui_result', None)
+                preparer_index_documentaire.clear()
+                st.session_state['import_messages'] = messages
+                st.rerun()
+            for message in messages:
+                st.info(message)
+
 if not PDF_PATHS:
     st.error(
         f"Aucun fichier PDF n'a été trouvé dans : {APP_DIR}"
     )
     st.info(
-        "Place un ou plusieurs fichiers PDF dans le même dossier "
-        "que l'application."
+        "Ajoutez vos PDF depuis la barre latérale pour commencer."
     )
     st.stop()
 
@@ -880,72 +1040,68 @@ with documents_tab:
             st.download_button('Télécharger le PDF', pdf_path.read_bytes(),
                 file_name=pdf_path.name, mime='application/pdf', key=f'pdf_{pdf_path.name}')
 
+def demander_analyse():
+    if not st.session_state.get('analyse_en_cours', False):
+        st.session_state['analyse_en_cours'] = True
+        st.session_state['analyse_a_lancer'] = True
+        st.session_state.pop('analyse_message', None)
+
+
 with assistant_tab:
     st.subheader('Que souhaitez-vous vérifier ?')
     st.caption('Précisez le document ou le chantier pour éviter les ambiguïtés entre plusieurs CCTP.')
     with st.form('question_form'):
         question = st.text_input('Votre question',
             placeholder='Dans cctp_lot_1.pdf, quelle est la hauteur des garde-corps ?')
-        bouton_analyse = st.form_submit_button('Analyser les documents')
+        bouton_analyse = st.form_submit_button(
+            'Analyse en cours…' if st.session_state.get('analyse_en_cours', False)
+            else 'Analyser les documents',
+            disabled=st.session_state.get('analyse_en_cours', False),
+            on_click=demander_analyse,
+        )
 
 # ============================================================
 # 10. EXÉCUTION DE LA QUESTION
 # ============================================================
 
 with assistant_tab:
-    if bouton_analyse:
-        if not question.strip():
-            st.warning("Veuillez entrer une question.")
-            st.stop()
-
+    if st.session_state.pop('analyse_a_lancer', False):
         try:
-            with st.spinner(
-                "Recherche hybride et reranking Qwen3 en cours..."
-            ):
-                meilleurs_parents = recherche_hybride_parent(
-                    question=question,
-                    index_documentaire=index_documentaire,
-                    reranker=reranker,
-                    k_enfants=NOMBRE_ENFANTS_PAR_MOTEUR,
-                    k_enfants_rerankes=NOMBRE_ENFANTS_APRES_RERANKING,
-                    k_parents=NOMBRE_PARENTS_FINAUX,
-                )
-
-                if not meilleurs_parents:
-                    st.warning(
-                        "Aucun passage pertinent n'a été retrouvé."
+            if not question.strip():
+                st.session_state['analyse_message'] = ('warning', 'Veuillez entrer une question.')
+            else:
+                st.session_state.pop('ui_result', None)
+                with st.spinner('Recherche des passages et rédaction de la réponse…'):
+                    meilleurs_parents = recherche_hybride_parent(
+                        question=question,
+                        index_documentaire=index_documentaire,
+                        reranker=reranker,
+                        k_enfants=NOMBRE_ENFANTS_PAR_MOTEUR,
+                        k_enfants_rerankes=NOMBRE_ENFANTS_APRES_RERANKING,
+                        k_parents=NOMBRE_PARENTS_FINAUX,
                     )
-                    st.stop()
-
-                contexte_texte = formater_contexte(
-                    meilleurs_parents
-                )
-
-                reponse = chain.invoke(
-                    {
-                        "context": contexte_texte,
-                        "input": question,
-                    }
-                )
-
-            # je stocke le résultat dans session_state plutôt que
-            # d'afficher direct : comme ça la réponse reste visible
-            # même après un rerun de Streamlit (genre si on interagit
-            # avec un autre widget juste après)
-            st.session_state['ui_result'] = {'question': question, 'response': reponse,
-                                                    'parents': meilleurs_parents}
-
+                    if not meilleurs_parents:
+                        st.session_state['analyse_message'] = ('warning', 'Aucun passage retrouvé.')
+                    else:
+                        reponse = chain.invoke({
+                            'context': formater_contexte(meilleurs_parents),
+                            'input': question,
+                        })
+                        st.session_state['ui_result'] = {
+                            'question': question, 'response': reponse,
+                            'parents': meilleurs_parents,
+                        }
+                        st.session_state['analyse_message'] = ('success', 'Analyse terminée.')
         except Exception as erreur:
-            st.error(
-                "Une erreur est survenue pendant l'analyse."
-            )
+            st.session_state['analyse_message'] = (
+                'error', f'Analyse interrompue : {erreur}. Vérifiez qu’Ollama fonctionne.')
+        finally:
+            st.session_state['analyse_en_cours'] = False
+        st.rerun()
 
-            st.exception(erreur)
-
-            st.info(
-                "Vérifie qu'Ollama fonctionne et que le modèle "
-                f"'{LLM_MODEL}' est installé."
-            )
+    message_analyse = st.session_state.get('analyse_message')
+    if message_analyse:
+        getattr(st, message_analyse[0])(message_analyse[1])
 
     resultat_ui = st.session_state.get('ui_result')
     if resultat_ui:
